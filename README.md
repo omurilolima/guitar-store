@@ -12,7 +12,8 @@ In this section, describe what the project hopes to accomplish, who it is intend
 
 Consider adding a mockup image using the "Am I Responsive" website.
 Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://retro-reboot.herokuapp.com
+
+🛑 LINK 🛑
 
 Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
 (reminder: `assets/` and `static/` are for files used on the live site, not documentation)
@@ -20,7 +21,7 @@ Consider adding a new folder called `documentation`, and add the amiresponsive s
 To add the image into your README, use this format:
 (assuming you have a new folder called `documentation` with an image called "mockup.png")
 
-![screenshot](documentation/mockup.png)
+🛑 SCREENSHOT 🛑
 
 Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
 Find out more about using Markdown elements here:
@@ -138,20 +139,20 @@ View a full list of user stories [here]().
 
 - As a Site Admin, I want to create, read, update and delete blog posts so that I can manage my blog content. `(COULD HAVE)`
 - As a User, I want to leave a comment to engage with the author and other readers. `(COULD HAVE)`
+- As a User, I want to like a blog post. `(COULD HAVE)`
 
 ### EPIC 6: Site Admin
 
-- As a site admin I want to be able to create new products from the front end so that I can easily add new products to the site. `(SHOULD HAVE)`
-- As a site admin I want to be able to edit existing products so that I can ensure that all product listings are up to date and accurate. `(SHOULD HAVE)`
-- As a site admin I want to be able to delete products from the site so that I can remove any products that are no longer being supplied by the site. `(SHOULD HAVE)`
-- As a site admin I want to be able to set the stock for each product so that I can manage how many units of each product the site can sell. `(SHOULD HAVE)`
+- As a site admin I want to add new products from the front end so that I can easily manage the catalogue to the site. `(SHOULD HAVE)`
+- As a site admin I want to edit existing products so that I can ensure that all product details are up to date. `(SHOULD HAVE)`
+- As a site admin I want to delete products from the site so that I can remove any products that are no longer being on the catalogue. `(SHOULD HAVE)`
 
 ### EPIC 7: SEO & Marketing
 
-- As a site user I want to be able to sign up for the site's mailing list so that I can receive offers and news in my inbox. `(COULD HAVE)`
-- As a site admin I want to be able to send marketing emails to people who signed up to the mailing list so that I can send out updates and offers to their inboxes. `(COULD HAVE)`
-- As a site admin I want to be able to set appropriate keywords on site pages so that I can increase the chances potential customers will find the site when searching to purchase records on Google. `(MUST HAVE)`
-- As a site admin I want to be able to share the business on Facebook so that I can reach and market to a larger audience. `(SHOULD HAVE)`
+- As a site admin I want to set appropriate keywords on the site to enhance the chances of potential customers discovering my store via Google searches. `(MUST HAVE)`
+- As a site user I want to sign up for the site's mailing list to receive offers and news. `(SHOULD HAVE)`
+- As a site admin I want to send emails to people who signed up to the site's mailing list so that I can send out news and offers to them. `(COULD HAVE)`
+- As a site admin I want to be able to share the business on Facebook so that I can reach and market to a broader audience. `(SHOULD HAVE)`
 
 ## Wireframes
 
@@ -164,15 +165,13 @@ Instructions on how to do Markdown `tables` start on line #213 on this site: htt
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
-I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
+I've used [Figma](https://www.figma.com/) to design my site wireframes.
 
 ### Home Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-home.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
+
 
 ### About Page Wireframes
 
@@ -357,7 +356,7 @@ Using Markdown formatting to represent an example ERD table using the Product mo
 
 ### GitHub Projects
 
-[GitHub Projects](https://github.com/adamgilroy22/retro-reboot/projects) served as an Agile tool for this project.
+GitHub Projects served as an Agile tool for this project.
 It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
@@ -368,11 +367,10 @@ Consider adding a basic screenshot of your Projects Board.
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-![screenshot](documentation/gh-projects.png)
 
 ### GitHub Issues
 
-[GitHub Issues](https://github.com/adamgilroy22/retro-reboot/issues) served as an another Agile tool.
+GitHub Issues served as an another Agile tool.
 There, I used my own **User Story Template** to manage user stories.
 
 It also helped with milestone iterations on a weekly basis.
@@ -383,13 +381,7 @@ Consider adding a screenshot of your Open and Closed Issues.
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-- [Open Issues](https://github.com/adamgilroy22/retro-reboot/issues)
 
-    ![screenshot](documentation/gh-issues-open.png)
-
-- [Closed Issues](https://github.com/adamgilroy22/retro-reboot/issues?q=is%3Aissue+is%3Aclosed)
-
-    ![screenshot](documentation/gh-issues-closed.png)
 
 ### MoSCoW Prioritization
 
@@ -433,7 +425,7 @@ to check the frequency of some of my site's primary keywords (only until the fre
 ### Sitemap
 
 I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
-This was generated using my deployed site URL: https://retro-reboot.herokuapp.com
+This was generated using my deployed site URL: 🛑 LINK 🛑
 
 After it finished crawling the entire site, it created a
 [sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
@@ -446,7 +438,7 @@ Inside, I've included the default settings:
 ```
 User-agent: *
 Disallow:
-Sitemap: https://retro-reboot.herokuapp.com/sitemap.xml
+Sitemap: 🛑 LINK 🛑
 ```
 
 Further links for future implementation:
@@ -512,7 +504,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-The live deployed application can be found deployed on [Heroku](https://retro-reboot.herokuapp.com).
+The live deployed application can be found deployed on 🛑 LINK 🛑.
 
 ### ElephantSQL Database
 
@@ -520,7 +512,7 @@ This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL 
 
 To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
 - Click **Create New Instance** to start a new database.
-- Provide a name (this is commonly the name of the project: retro-reboot).
+- Provide a name (this is commonly the name of the project: 🛑 NAME 🛑).
 - Select the **Tiny Turtle (Free)** plan.
 - You can leave the **Tags** blank.
 - Select the **Region** and **Data Center** closest to you.
@@ -599,7 +591,7 @@ Back on the AWS Services Menu, search for and open **IAM** (Identity and Access 
 Once on the IAM page, follow these steps:
 
 - From **User Groups**, click **Create New Group**.
-	- Suggested Name: `group-retro-reboot` (group + the project name)
+	- Suggested Name: `group-guitar-store` (group + the project name)
 - Tags are optional, but you must click it to get to the **review policy** page.
 - From **User Groups**, select your newly created group, and go to the **Permissions** tab.
 - Open the **Add Permissions** dropdown, and click **Attach Policies**.
@@ -625,17 +617,17 @@ Once on the IAM page, follow these steps:
 		```
 	
 	- Click **Review Policy**.
-	- Suggested Name: `policy-retro-reboot` (policy + the project name)
+	- Suggested Name: `policy-guitar-store` (policy + the project name)
 	- Provide a description:
-		- "Access to S3 Bucket for retro-reboot static files."
+		- "Access to S3 Bucket for guitar-store static files."
 	- Click **Create Policy**.
-- From **User Groups**, click your "group-retro-reboot".
+- From **User Groups**, click your "group-guitar-store".
 - Click **Attach Policy**.
-- Search for the policy you've just created ("policy-retro-reboot") and select it, then **Attach Policy**.
+- Search for the policy you've just created ("policy-guitar-store") and select it, then **Attach Policy**.
 - From **User Groups**, click **Add User**.
-	- Suggested Name: `user-retro-reboot` (user + the project name)
+	- Suggested Name: `user-guitar-store` (user + the project name)
 - For "Select AWS Access Type", select **Programmatic Access**.
-- Select the group to add your new user to: `group-retro-reboot`
+- Select the group to add your new user to: `group-guitar-store`
 - Tags are optional, but you must click it to get to the **review user** page.
 - Click **Create User** once done.
 - You should see a button to **Download .csv**, so click it to save a copy on your system.
@@ -667,7 +659,7 @@ As a backup, in case users prematurely close the purchase-order page during paym
 
 - From your Stripe dashboard, click **Developers**, and select **Webhooks**.
 - From there, click **Add Endpoint**.
-	- `https://retro-reboot.herokuapp.com/checkout/wh/`
+	- `🛑 LINK 🛑`
 - Click **receive all events**.
 - Click **Add Endpoint** to complete the process.
 - You'll have a new key here:
@@ -689,7 +681,7 @@ Once you've created a Gmail (Google) account and logged-in, follow these series 
 - This might prompt you once again to confirm your password and account.
 - Select **Mail** for the app type.
 - Select **Other (Custom name)** for the device type.
-	- Any custom name, such as "Django" or retro-reboot
+	- Any custom name, such as "Django" or guitar-store
 - You'll be provided with a 16-character password (API key).
 	- Save this somewhere locally, as you cannot access this key again later!
 	- `EMAIL_HOST_PASS` = user's 16-character API key
@@ -792,18 +784,18 @@ If you'd like to backup your database models, use the following command for each
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://github.com/adamgilroy22/retro-reboot) 
+1. Go to the [GitHub repository](https://github.com/omurilolima/guitar-store) 
 2. Locate the Code button above the list of files and click it 
 3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
 4. Open Git Bash or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
-	- `git clone https://github.com/adamgilroy22/retro-reboot.git`
+	- `git clone https://github.com/omurilolima/guitar-store.git`
 7. Press Enter to create your local clone.
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/adamgilroy22/retro-reboot)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/omurilolima/guitar-store)
 
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
@@ -813,7 +805,7 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/adamgilroy22/retro-reboot)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/omurilolima/guitar-store)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
@@ -848,18 +840,6 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 
 | Source | Location | Notes |
 | --- | --- | --- |
-| [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 
 ### Media
 
@@ -879,15 +859,6 @@ by sending yourself the following command: `!freemedia`.
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 
 ### Acknowledgements
 
