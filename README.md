@@ -391,7 +391,7 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 - **Must Have**: guaranteed to be delivered (*max 60% of stories*)
 - **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
 - **Could Have**: has small impact if left out (*20% of stories*)
-- **Won't Have**: not a priority for this iteration
+- **Won't Have**: This will not be worked on
 
 ## Ecommerce Business Model
 
