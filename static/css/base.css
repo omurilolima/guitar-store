@@ -38,6 +38,10 @@ body {
     height: fit-content;
 }
 
+.bg-black {
+    background-color: #000 !important;
+}
+
 .btn-black {
     background: black;
     color: white;
