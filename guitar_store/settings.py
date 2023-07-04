@@ -26,9 +26,9 @@ SECRET_KEY = "django-insecure-xh2z_c7(vld@@9c0h@c=(o+9ng)852x*6)@v_ae5u4x&sja@3p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-omurilolima-guitar-store-tu3rgsqy2n.us2.codeanyapp.com',]
+ALLOWED_HOSTS = ['8000-omurilolima-guitarstore-fh56o6l9tcu.ws-eu101.gitpod.io',]
 
-CSRF_TRUSTED_ORIGINS=['https://*.8000-omurilolima-guitar-store-tu3rgsqy2n.us2.codeanyapp.com/', 'https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS=['https://*.8000-omurilolima-guitarstore-fh56o6l9tcu.ws-eu101.gitpod.io', 'https://*.127.0.0.1']
 
 # Application definition
 
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +61,10 @@ ROOT_URLCONF = "guitar_store.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
