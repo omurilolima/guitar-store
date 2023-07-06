@@ -1,0 +1,30 @@
+[
+   {
+      "model":"products.category",
+      "fields":{
+         "name":"semiacoustic",
+         "friendly_name":"Semi acoustic"
+      }
+   },
+   {
+      "model":"products.category",
+      "fields":{
+         "name":"lespaul",
+         "friendly_name":"Les Paul"
+      }
+   },
+   {
+      "model":"products.category",
+      "fields":{
+         "name":"telecaster",
+         "friendly_name":"Telecaster"
+      }
+   },
+   {
+      "model":"products.category",
+      "fields":{
+         "name":"special",
+         "friendly_name":"Special Models"
+      }
+   }
+]

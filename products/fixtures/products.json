@@ -1,0 +1,230 @@
+[
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 1,
+		"sku": "pp5001340155",
+		"name": "Ibanez AS93FM-TCD",
+		"description": "Artcore series\nBody: Flamed maple\nThree-piece set neck: Nyatoh/maple\n22 Medium frets\nFretboard: Ebony\nWhite block fretboard inlays\nPickups: 2 Super 58 humbuckers\nART-1 bridge with Quik-Change III tailpiece\nGolden hardware\nColour: Transparent Cherry Red",
+		"price": 722.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_42/428995/12984994_800.jpg",
+		"image": "12984994_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 1,
+		"sku": "pp5001600425",
+		"name": "Epiphone Sheraton-II Pro VS",
+		"description": "As with any good semi-acoustic, the Sheraton also has a bit of a woody resonance in the sound. This is particularly noticeable with more intricate and delicate playing styles in the clean and low crunch range, due to its rich frequency spectrum and great dynamics.\n\nJazz Collection Thinline with f-holes\nBody & Top: Maple\nNeck: Maple\nFretboard: Pau Ferro\nFretboard inlays: Triangle\nPickups: 2 Probucker humbuckers with coil splitting\nHardware: Gold-plated\nColour: Vintage Sunburst\nCorresponding case: Article Nr 129712 or Article Nr 414324 (both are not included, must be ordered separately)",
+		"price": 659.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_15/155028/8592047_800.jpg",
+		"image": "8592047_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+    "fields":{
+		"category": 1,
+		"sku": "pp5001730010",
+		"name": "B.B. King Lucille",
+		"description": "Based on the famously named guitars of blues legend B.B. King, the Epiphone B.B. King Lucille was inspired by the various Gibson ES™ models he played over the years - all of which were named Lucille. Standout features that make this Lucille such a stunning guitar and loving tribute include gold hardware, Grover® Rotomatic® tuners, a Graph Tech® nut, ebony fretboard with pearloid block inlays, a brass truss rod cover with B.B. King’s name engraved on it, mother of pearl Lucille inlay on the headstock face, multi-ply binding on the body and headstock, a TP-6 tailpiece with fine tuners, and a semi-hollow body with a maple center block to reduce feedback. Unlike most semi-hollowbody guitars, the B.B. King Lucille’s top doesn’t have any f-holes",
+		"price": 1099.00,
+		"image_url": "https://images.ctfassets.net/m8onsx4mm13s/2b3iRspYsPKWDNgC5DRgBU/e769f9795f884ec50be07b81984c553d/__static.gibson.com_product-images_Epiphone_EPIYX7224_Ebony_IGBBKEBGH3_front.jpg",
+		"image": "__static.gibson.com_product-images_Epiphone_EPIYX7224_Ebony_IGBBKEBGH3_front.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 1,
+		"sku": "pp5001890157",
+		"name": "Gibson 1961 ES-335 Reissue Ebony HA",
+		"description": "Custom shop model\nBody: Maple / Poplar / Maple\nNeck: Mahogany\nFingerboard: Rosewood\nDot fingerboard inlays\nNeck Profile: Authentic '61 Skinny C\nScale: 628 mm\nRoyalite Binding\nHolly Head Veneer\n22 Frets\nPickups: 2 Custombucker AlNiCo III unpotted humbuckers\n2 x Volume and 2 x tone controls",
+		"price": 7999.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_52/521099/17599243_800.jpg",
+		"image": "17599243_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 1,
+		"sku": "pp5002111605",
+		"name": "Gretsch G6136T-55VS White Falcon",
+		"description": "Vintage Select model\nBody shape: Hollow body with cutaway\nBody: 3-ply laminated maple\nGold sparkle binding\nBody depth: 5.72 cm (2.25)\nBody width: 43.20 cm (17)\nMaple neck with walnut stripe\n22 Medium frets\nFretboard: Ebony\nFretboard inlays: Engraved Hump Block\nNeck radius: 12\nBone nut\nNut width: 42.62 mm\nScale: 648 mm\nPickup: 2 TV Jones T-Armonds",
+		"price": 4290.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_37/378247/10744197_800.jpg",
+		"image": "378247/10744197_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 1,
+		"sku": "pp5002260206",
+		"name": "Gibson ES-335 Dot Vintage Ebony",
+		"description": "Body: Maple\nTop: Maple\nNeck: Mahogany (Swietenia macrophylla - Origin: India/ Indonesia)\nFretboard: Rosewood (Dalbergia Latifolia)\nFretboard inlays: Dots\nNeck profile: Rounded C\n22 Frets\nScale: 628 mm\nNut width: 42.8 mm\nPickup: 2 Calibrated T-Type humbuckers",
+		"price": 3299.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_48/482469/17585860_800.jpg",
+		"image": "17585860_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 1,
+		"sku": "pp5002440521",
+		"name": "Epiphone ES-335 Cherry",
+		"description": "Design: Semi-Hollow Inspired by Gibson\nTop: Maple\nBack and sides: Maple\nNeck: Mahogany\nFretboard: Indian Laurel\nNeck profile: Rounded C\nCream-coloured binding\nScale: 628 mm (24.724)\nNut width: 43 mm (1.693)\nGraphTech NuBone nut\n22 Frets\nPickups: 2 Alnico Classic Pro humbuckers",
+		"price": 589.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_50/501057/16385969_800.jpg",
+		"image": "16385969_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 1,
+		"sku": "pp5002601115",
+		"name": "Gibson 1964 ES-335 Reissue 60s Cherry",
+		"description": "Custom Shop Model\nVOS - Vintage Original Specifications\nBody: Maple / poplar / maple\nNeck: Mahogany\nFingerboard: Rosewood\nSmall block fingerboard inlays\nNeck profile: Authentic '64 Medium C\nRoyalite binding\nHolly Head veneer\nScale: 628 mm\n22 Frets\nPickups: 2 unpotted Custombuckers AlNiCo III humbucker",
+		"price": 5499.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_52/527010/17181333_800.jpg",
+		"image": "17181333_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 1,
+		"sku": "pp5002690715",
+		"name": "Yamaha SA2200VS",
+		"description": "Design: Semi-hollow body\nBody: Maple\nNeck: Mahogany\nFretboard: Ebony\n22 Frets\nScale: 628 mm\nPickups: 2 AlNiCo humbuckers\nBridge: Tune-O-Matic\nColour: Violin Sunburst\nIncludes a case\nMade in Japan",
+		"price": 2399.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_14/149544/7037006_800.jpg",
+		"image": "7037006_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 2,
+		"sku": "pp5002701115",
+		"name": "Gibson Les Paul 59 KBF Light Aged",
+		"description": "Hand Picked Top - hand selected woods from the Nashville Custom Shop\nHide glued top: Flamed maple\nBody: Solid mahogany\nOne piece neck: Mahogany\nHide glued fingerboard: Rosewood\nAged Cellulose Nitrate Trapezoid fingerboard inlays\nNeck profile: Authentic '59 Medium C\nAniline dye back\n22 Historic Medium Jumbo Frets\n2x Custombucker pickups",
+		"price": 8499.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_53/537783/18102402_800.jpg",
+		"image": "18102402_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 2,
+		"sku": "pp5002761055",
+		"name": "Gibson Les Paul Standard 50s GT",
+		"description": "Body: Mahogany (Swietenia macrophylla)\nCream-coloured body binding\nTop: Maple\nNeck: Mahogany (Swietenia macrophylla)\nVintage '50s neck profile\nFretboard: Rosewood (Dalbergia latifolia)\nTrapezoidal fretboard inlays\nCream fretboard binding\nGraphtech nut\nNut width: 43 mm\nScale: 628 mm\n22 Cryogenically treated medium frets\nPickups: Burstbucker # 2 (bridge) and Burstbucker # 1 (neck) Humbucker",
+		"price": 3199.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_46/462504/15172473_800.jpg",
+		"image": "15172473_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 2,
+		"sku": "pp5002820069",
+		"name": "Epiphone Billie Joe Armstrong LP Junior",
+		"description": "Billie Joe Armstrong (Green Day) Signature Model\nBody: Mahogany\nSet-in neck: Mahogany\nFretboard: Laurel\nDot fretboard inlay\nNeck profile: Vintage '50s\nScale length: 629 mm (24.76)\nNut width: 43 mm (1.69)\nGraph Tech nut\n22 Frets\nPickup: Epiphone Pro P-90 single coil",
+		"price": 539.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_52/525222/16755974_800.jpg",
+		"image": "16755974_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 2,
+		"sku": "pp5002820147",
+		"name": "DAngelico DLX SS Barit. Satin Trans Wine",
+		"description": "Style: Semi-Hollow with centre block\nTop, back and sides: laminated maple\nNeck: Maple/walnut/maple neck\nNeck profile: narrow C\n5-Ply body binding\nFretboard: Ebony\nFretboard inlays: Mother-of-Pearl abalone split blocks\nNut width: 43 mm\nScale: 679 mm\n22 Frets\nPickups: 2 Seymour Duncan D'Angelico Great Dane P-90",
+		"price": 1999.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_55/553356/17828359_800.jpg",
+		"image": "17828359_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 3,
+		"sku": "pp5002910572",
+		"name": "Squier Tele 40th Anniv VB",
+		"description": "40th Anniversary Vintage Edition\nNyatoh body\nMaple neck\nMaple fingerboard\nBlack dot fretboard inlays\nNeck finish: tinted satin urethane lacquer\nNeck profile: C\nFretboard radius: 241 mm (9.5)\nNut width: 42 mm (1.650)\nBone nut\n21 Narrow tall frets\nPickups: 2 Fender-designed AlNiCo single coils",
+		"price": 444.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_53/536110/17464100_800.jpg",
+		"image": "17464100_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 3,
+		"sku": "pp5002990740",
+		"name": "Fender Joe Strummer Tele RW Black",
+		"description": "Joe Strummer (The Clash) signature model\nAlder body\nBolt-on maple neck\nRosewood fretboard\nWhite pearloid dot fretboard inlays\nNeck profile: '60s C\nScale: 648 mm (25.51)\nFretboard radius: 7.25 (1.25)\nNut width: 42 mm (1.65)\nBone nut\n21 Vintage frets\nPickups: 2 Vintage-style 60s hot Tele single coils",
+		"price": 1635.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_54/545756/17622695_800.jpg",
+		"image": "17622695_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 4,
+		"sku": "pp5003050248",
+		"name": "Music Man John Petrucci Majesty 7 EG",
+		"description": "John Petrucci (Dream Theater) Signature model\nTop: Maple\nBody: Mahogany\nNeck-through-body neck: Mahogany\nFretboard: Ebony\nFretboard radius: 17\nScale: 648 mm\nNut width: 47.6 mm\n24 Stainless steel jumbo frets\nPickups: DiMarzio Dreamcatcher and Rainmaker humbuckers and Fishman piezo system",
+		"price": 4999.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_52/520992/16867056_800.jpg",
+		"image": "16867056_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 4,
+		"sku": "pp5003070787",
+		"name": "PRS Santana Retro 10 Top SY",
+		"description": "Body: Mahogany\n10-Top: Flamed maple\nSet-in neck: Mahogany\nFretboard: Rosewood\nBird fretboard inlays\nNeck profile: Santana Pre-Factory\nFaux bone fretboard binding\nScale length: 622 mm (24.5)\n24 Santana jumbo frets\nPickups: Santana Bass and 58/15 Treble Humbucker",
+		"price": 6099.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_51/517799/16930625_800.jpg",
+		"image": "16930625_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 4,
+		"sku": "pp5003090182",
+		"name": "Ibanez JS2450-MCP Joe Satriani",
+		"description": "Joe Satriani Signature Model\nBody: Alder\n3-Piece neck: Maple / Bubinga (Guibourtia demeusei)\nFretboard: Rosewood (Dalbergia latifolia)\nScale: 648 mm\nNut width: 42 mm\n24 Frets\nPickups: DiMarzio Satch Track (neck) and Mo Joe (bridge) humbuckers",
+		"price": 2499.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_36/360367/12106267_800.jpg",
+		"image": "12106267_800.jpg"
+	}
+  },
+  {
+    "model": "products.product",
+	"fields":{
+		"category": 4,
+		"sku": "pp5003090186",
+		"name": "Gibson Dave Mustaine Flying V SM",
+		"description": "Dave Mustaine (Megadeth) Signature Model\nBody: Mahogany\nNeck: Mahogany\nNeck profile: Slim Taper\nFretboard: Ebony\nVolute headstock\nPearl Teeth fretboard inlays\nScale length: 648 mm\n24 Frets\nPickups: 2 Seymour Duncan Dave Mustaine Thrash Factor Humbuckers",
+		"price": 2799.00,
+		"image_url": "https://images.static-thomann.de/pics/bdb/_53/530669/16728324_800.jpg",
+		"image": "16728324_800.jpg"
+	}
+  }
+]
