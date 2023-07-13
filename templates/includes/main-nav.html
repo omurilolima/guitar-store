@@ -24,11 +24,12 @@
                 NEW
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="?category=" class="dropdown-item">Semi hollow &amp;
+                <a href="{% url 'products' %}?category=semiacoustic" class="dropdown-item">Semi hollow &amp;
                     Hollow body</a>
-                <a href="?category=" class="dropdown-item">Les Paul</a>
-                <a href="?category=" class="dropdown-item">Stratos</a>
-                <a href="?category=" class="dropdown-item">All
+                <a href="{% url 'products' %}?category=lespaul" class="dropdown-item">Les Paul</a>
+                <a href="{% url 'products' %}?category=telecaster" class="dropdown-item">Telecaster</a>
+                <a href="{% url 'products' %}?category=special" class="dropdown-item">Especial Models</a>
+                <a href="{% url 'products' %}?category=semiacoustic,lespaul,telecaster,special" class="dropdown-item">All
                     Guitars</a>
             </div>
         </li>
@@ -39,23 +40,21 @@
                 VINTAGE
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="?category=bed_bath" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="?category=kitchen_dining" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="?category=bed_bath,kitchen_dining" class="dropdown-item">All Homeware</a>
+                <a href="#" class="dropdown-item">Subcategory 1</a>
+                <a href="#" class="dropdown-item">Subcategory 2</a>
+                <a href="#" class="dropdown-item">Subcategory 3</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                Special Offers
+                SALE
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="?category=deals" class="dropdown-item">Deals</a>
-                <a href="?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="?category=new_arrivals,deals,clearance" class="dropdown-item">All
-                    Specials</a>
+                <a href="#" class="dropdown-item">Subcategory 1</a>
+                <a href="#" class="dropdown-item">Subcategory 2</a>
+                <a href="#" class="dropdown-item">Subcategory 3</a>
             </div>
         </li>
     </ul>
