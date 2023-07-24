@@ -62,7 +62,8 @@ class OrderLineItem(models.Model):
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
     def save(self, *args, **kwargs):
-        """ Override the original save method to set the lineitem total
+        """
+        Override the original save method to set the lineitem total
         and update the order total.
         """
         self.lineitem_total = self.product.price * self.quantity

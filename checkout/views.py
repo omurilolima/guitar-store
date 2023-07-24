@@ -34,10 +34,11 @@ def checkout(request):
                 try:
                     product = Product.objects.get(id=item_id)
                     order_line_item = OrderLineItem(
-                        order=order,
-                        product=product,
-                        quantity=item_data,
-                    )
+                            order=order,
+                            product=product,
+                            quantity=item_data,
+                        )
+                    order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database."
@@ -47,7 +48,8 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+                                    args=[order.order_number]))
         else:
             messages.error(request, "There was an error with your form. \
                 Please double check your information.")
