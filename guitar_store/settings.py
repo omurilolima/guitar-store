@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-xh2z_c7(vld@@9c0h@c=(o+9ng)852x*6)@v_ae5u4x&sja@3p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['murilo-guitar-shop.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['murilo-guitar-shop.herokuapp.com', 'murilo-guitar-shop-dee69b8139e5.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.8000-omurilolima-guitarstore-fh56o6l9tcu.ws-eu101.gitpod.io', 'https://*.127.0.0.1']
 
