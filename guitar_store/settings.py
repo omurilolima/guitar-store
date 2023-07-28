@@ -23,15 +23,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'sia@o6$oxk466^e8#su23sonr!)e9ijknx%!%u#s0&v!+@mbli')
+SECRET_KEY = os.environ.get(
+    'SECRET_KEY', 'sia@o6$oxk466^e8#su23sonr!)e9ijknx%!%u#s0&v!+@mbli')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['murilo-guitar-shop-dee69b8139e5.herokuapp.com', '8000-omurilolima-guitarstore-gllkt1xv7em.ws-eu102.gitpod.io']
+ALLOWED_HOSTS = [
+    'murilo-guitar-shop-dee69b8139e5.herokuapp.com',
+    '8000-omurilolima-guitarstore-gllkt1xv7em.ws-eu102.gitpod.io']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.8000-omurilolima-guitarstore-fh56o6l9tcu.ws-eu101.gitpod.io', 'https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.8000-omurilolima-guitarstore-fh56o6l9tcu.ws-eu101.gitpod.io',
+    'https://*.127.0.0.1']
 
 # Application definition
 
@@ -142,16 +147,16 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa
     },
     {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa
     },
     {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa
     },
     {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa
     },
 ]
 
