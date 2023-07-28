@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /profiles/
+Disallow: /bag/
+Sitemap: https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/sitemap.xml
