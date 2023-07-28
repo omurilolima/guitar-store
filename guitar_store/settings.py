@@ -23,12 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'sia@o6$oxk466^e8#su23sonr!)e9ijknx%!%u#s0&v!+@mbli')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
+# 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['murilo-guitar-shop.herokuapp.com', 'murilo-guitar-shop-dee69b8139e5.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['murilo-guitar-shop-dee69b8139e5.herokuapp.com', '8000-omurilolima-guitarstore-gllkt1xv7em.ws-eu102.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.8000-omurilolima-guitarstore-fh56o6l9tcu.ws-eu101.gitpod.io', 'https://*.127.0.0.1']
 
@@ -116,8 +117,6 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
-
-WSGI_APPLICATION = 'boutique_ado.wsgi.application'
 
 
 WSGI_APPLICATION = "guitar_store.wsgi.application"
