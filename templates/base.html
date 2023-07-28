@@ -3,166 +3,259 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
+<head>
 
-        {% block meta %}
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <meta name="description" content="Find your new Instrument at Guitar Store, in Dublin, Ireland">
-            <meta name="keywords" 
-                content="Guitar, Store, Shop, Instrument, Dublin, Ireland, Les Paul, Strat,
-                Telecaster, Semihollow, Fender, Gibson, Epiphone, Ibanez">
-        {% endblock %}
+    {% block meta %}
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Find your new Instrument at Guitar Store, in Dublin, Ireland">
+        <meta name="keywords" 
+            content="Guitar, Store, Shop, Instrument, Dublin, Ireland, Les Paul, Strat,
+            Telecaster, Semihollow, Fender, Gibson, Epiphone, Ibanez">
+    {% endblock %}
 
-        {% block extra_meta %}
-        {% endblock %}
+    {% block extra_meta %}
+    {% endblock %}
 
-        {% block corecss %}
-            <link rel="stylesheet" href="{% static 'css/base.css' %}">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-                integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-            <!-- Stripe -->
-            <script src="https://js.stripe.com/v3/"></script>
-        {% endblock %}
+    {% block corecss %}
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <!-- Stripe -->
+        <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
 
-        {% block extra_css %}
+    {% block extra_css %}
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    {% endblock %}
 
-        {% endblock %}
+    {% block corejs %}
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/49ba80934f.js" crossorigin="anonymous"></script>
+        <!-- Stripe  -->
+        <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
+    {% block extra_js %}
+    {% endblock %}
 
-        {% block corejs %}
-            <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-                crossorigin="anonymous"></script>
-            <script src="https://kit.fontawesome.com/49ba80934f.js" crossorigin="anonymous"></script>
-            <!-- Stripe  -->
-            <script src="https://js.stripe.com/v3/"></script>
-        {% endblock %}
-        {% block extra_js %}
-        {% endblock %}
+    <title>Guitar Store {% block extra_title %}{% endblock %}</title>
+</head>
 
-        <title>Guitar Store {% block extra_title %}{% endblock %}</title>
-    </head>
-
-    <body>
-        <header class="container-fluid fixed-top">
-            <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                    <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-font text-black my-0"><strong>Guitar</strong> Store</h2>
-                    </a>
-                </div>
-                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                    <form method="GET" action="{% url 'products' %}">
-                        <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0" type="text" name="q"
-                                placeholder="Search our site">
-                            <div class="input-group-append">
-                                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                                    <span class="icon">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </button>
-                            </div>
+<body>
+    <header class="container-fluid fixed-top">
+        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <h2 class="logo-font text-black my-0"><strong>Guitar</strong> Store</h2>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <form method="GET" action="{% url 'products' %}">
+                    <div class="input-group w-100">
+                        <input class="form-control border border-black rounded-0" type="text" name="q"
+                            placeholder="Search our site">
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
                         </div>
-                    </form>
-                </div>
-                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                    <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                        <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <div class="text-center">
-                                    <div><i class="fas fa-user fa-lg"></i></div>
-                                    <p class="my-0">My Account</p>
-                                </div>
-                            </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                                {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                                {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                                {% endif %}
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <li class="list-inline-item dropdown">
+                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center">
+                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <p class="my-0">My Account</p>
                             </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
-                                <div class="text-center">
-                                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                    <p class="my-0">
-                                        {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
-                                        {% else %}
-                                        $0.00
-                                        {% endif %}
-                                    </p>
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_authenticated %}
+                            {% if request.user.is_superuser %}
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            {% endif %}
+                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% else %}
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            {% endif %}
+                        </div>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                    ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                    $0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                {% include 'includes/mobile-top-header.html' %}
+                {% include 'includes/main-nav.html' %}
+            </nav>
+        </div>
+        <div class="row text-center" id="delivery-banner">
+            <div class="col bg-black text-white">
+                <h4 class="logo-font">
+                    Free delivery on orders over ${{ free_delivery_threshold }}!
+                </h4>
+            </div>
+        </div>
+    </header>
+
+    {% if messages %}
+        <div class="message-container">
+            {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% block page_header %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="footer container-fluid mt-auto py-3 bg-black">
+        <div class="row text-white">
+            <!-- Column 1 -->
+            <div class="col-sm-4">
+                <h5 class="text-uppercase general-sub">Guitar Store</h5>
+                <ul class="list-unstyled mt-3">
+                    <li><p>The best Guitar Store in Dublin, Ireland.</p></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Column 2 -->
+            <div class="col-sm-4">
+                <h5 class="text-uppercase general-sub">Subscribe</h5>
+                <div id="mc_embed_shell">
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://herokuapp.us21.list-manage.com/subscribe/post?u=4855753c5a5afe34df8db36a3&amp;id=b780542355&amp;f_id=00945de1f0"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate ml-0 mt-0" target="_blank">
+                            <div id="mc_embed_signup_scroll">
+                                
+                                <div class="mc-field-group">
+                                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required=""
+                                        value="">
                                 </div>
-                            </a>
-                        </li>
-                    </ul>
+                                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                    /* real people should not fill this in and expect good things - do not remove this
+                                    or risk form bot signups */
+                                    <input type="text" name="b_4855753c5a5afe34df8db36a3_b780542355" tabindex="-1"
+                                        value="">
+                                </div>
+                                    <div class="clear foot">
+                                        <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                            class="btn btn-sm bg-white btn-outline-black text-uppercase rounded-0 my-0 w-50 ml-0" value="Subscribe">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="row bg-white">
-                <nav class="navbar navbar-expand-lg navbar-light w-100">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    {% include 'includes/mobile-top-header.html' %}
-                    {% include 'includes/main-nav.html' %}
-                </nav>
+            <!-- Column 3 -->
+            <div class="col-sm-4">
+                <h5 class="text-uppercase">Social</h5>
+                <ul class="list-inline social-links mt-3">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="row text-center" id="delivery-banner">
-                <div class="col bg-black text-white">
-                    <h4 class="logo-font">
-                        Free delivery on orders over ${{ free_delivery_threshold }}!
-                    </h4>
-                </div>
-            </div>
-        </header>
-
-        {% if messages %}
-            <div class="message-container">
-                {% for message in messages %}
-                    {% with message.level as level %}
-                        {% if level == 40 %}
-                            {% include 'includes/toasts/toast_error.html' %}
-                        {% elif level == 30 %}
-                            {% include 'includes/toasts/toast_warning.html' %}
-                        {% elif level == 25 %}
-                            {% include 'includes/toasts/toast_success.html' %}
-                        {% else %}
-                            {% include 'includes/toasts/toast_info.html' %}
-                        {% endif %}
-                    {% endwith %}
-                {% endfor %}
-            </div>
-        {% endif %}
-
-        {% block page_header %}
-        {% endblock %}
-
-        {% block content %}
-        {% endblock %}
-
-        {% block postloadjs %}
+        </div>
+        <hr>
+        <div class="text-white text-center bg-black">
+            <p class="mb-0">Developed By <a href="https://github.com/omurilolima" target="_blank" rel="nofollow">Murilo Lima</a> for Code Institute's Portfolio Project 5 - 2023</p>
+        </div>
+    </footer>
+        
+</body>
+    {% block postloadjs %}
         <script type="text/javascript">
             $('.toast').toast('show');
         </script>
-        {% endblock %}
+        <!-- Mailchimp scripts -->
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
+        </script>
 
-
-    </body>
-
+        <script type="text/javascript">
+            (function ($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[1] = 'FNAME';
+                ftypes[1] = 'text';
+                fnames[2] = 'LNAME';
+                ftypes[2] = 'text';
+                fnames[3] = 'ADDRESS';
+                ftypes[3] = 'address';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+                fnames[5] = 'BIRTHDAY';
+                ftypes[5] = 'birthday';
+            }(jQuery));
+            var $mcj = jQuery.noConflict(true);
+        </script>
+    {% endblock %}
 </html>

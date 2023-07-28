@@ -5,7 +5,7 @@ html {
 body {
     background: url('/media/guitar_store_paul_maccartney.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: 100vh;
     color: #555;
     font-family: 'Lato';
 }
@@ -171,16 +171,32 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/* -------------------------------- Media Queries */
+/* Footer */
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-      max-width: 80%;
-    }
+body > footer {
+    position: sticky;
+    top: 100vh;
 }
 
-  /* Allauth form formatting */
+.footer a {
+    color: #17a2b8;
+}
+
+/* Mailchimp form */
+
+#mc_embed_signup {
+    background:#000;
+    clear:left; 
+    font-family: 'Lato';
+}
+
+.social-links i {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 0.5rem;
+}
+
+/* Allauth form formatting */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
@@ -261,6 +277,14 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
