@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container mt-3">
+    <div class="row g-0">
+        <div class="col-md-6 masthead-text">
+            <!-- Post title goes in these h1 tags -->
+            <h1 class="post-title">
+                {{ post.title }}
+            </h1>
+            <!-- Post author goes before the | the post's created date goes after -->
+            <p class="post-subtitle">Author: {{ post.author }} | {{ post.created_on }}</p>
+        </div>
+        <div class="d-md-block col-md-6 col-sm-12 masthead-image">
+            <!-- The featured image URL goes in the src attribute -->
+            <img src="{{ post.featured_image.url }}" width="100%" alt="Featured image">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col card mb-4  mt-3 left  top">
+            <div class="card-body">
+                <!-- The post content goes inside the card-text. -->
+                <!-- Use the | safe filter inside the template tags -->
+                <p class="card-text ">
+                    {{ post.content | safe }}
+                </p>
+                <div class="row">
+
+                    <div class="col-1">
+                        <strong>
+                            {% if user.is_authenticated %}
+                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if liked %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                {% else %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                {% endif %}
+                            </form>
+                            {% else %}
+                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            {% endif %}
+                        <!-- The number of likes goes before the closing strong tag -->
+                        <span class="text-secondary">{{ post.number_of_likes }} </span>
+                        </strong>
+                    </div>
+                    <div class="col-1">
+                        {% with comments.count as total_comments %}
+                        <strong class="text-secondary"><i class="far fa-comments"></i>
+                            <!-- Our total_comments variable goes before the closing strong tag -->
+                            {{ total_comments }}</strong>
+                        {% endwith %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row comments justify-content-evenly mb-4">
+        <div class="col-md-7 card">
+            <div class="card-body">
+                {% if user.is_authenticated %}
+                <h3>Comments:</h3>
+                <!-- For loop to iterate through each comment in comments -->
+                {% for comment in comments %}
+                <div class="comments card mt-2" style="padding: 10px;">
+                    <p class="font-weight-bold">
+                        <strong>{{ comment.name }}</strong> at
+                        <span class="fst-italic text-muted font-weight-normal">
+                            {{ comment.created_on }}
+                        </span> wrote:
+                    </p>
+                    {{ comment.body | linebreaks }}
+                </div>
+                <!-- For loop ends here -->
+                {% endfor %}
+                {% else %}
+                <!-- Condition when the user is not authenticated -->
+                <h3>Comments:</h3>
+                <p class="fs-5">To see the comments and leave a comment, please log in or create an account.</p>
+                <a href="{% url 'account_login' %}">
+                    <button type="button" class="btn btn-signup btn-sm">Login</button>
+                </a>
+
+                <a href="{% url 'account_signup' %}">
+                    <button type="button" class="btn btn-signup btn-sm ms-2">Register</button>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+                {% if user.is_authenticated %}
+                <div class="col-md-4 card">
+                    <div class="card-body">
+                        {% if commented %}
+                            <div class="alert alert-success" role="alert">
+                                Your comment is awaiting approval
+                            </div>
+                        {% else %}
+                            <h3>Leave a comment:</h3>
+                            <p>Posting as: <strong>{{ user.username }}</strong></p>
+                            <form method="post">
+                                {{ comment_form | crispy }}
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-signup mt-2">Submit</button>
+                            </form>
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>  
+{%endblock%}
