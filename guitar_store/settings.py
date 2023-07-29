@@ -13,11 +13,19 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+if os.path.isfile('env.py'):
+    import env
+import cloudinary
 
-
+# Cloudinary config
+cloudinary.config( 
+  cloud_name="dr3djjbyy",
+  api_key="391326746464634",
+  api_secret="XRjifKeCwTXG7UPXOom2wEKjTSE"
+)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -48,7 +56,9 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    'cloudinary_storage',
     "django.contrib.staticfiles",
+    'cloudinary',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -58,6 +68,8 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'blog',
+    'django_summernote',
 
     # Others
     'crispy_forms',
@@ -84,6 +96,7 @@ TEMPLATES = [
         "DIRS": [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
+            TEMPLATES_DIR,
         ],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -180,9 +193,12 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+DEFAULT_FILES_STORAGE = 'custom_storage.storage.MediaCloudinaryStorage'
+
 
 if 'USE_AWS' in os.environ:
     # Cache Control
