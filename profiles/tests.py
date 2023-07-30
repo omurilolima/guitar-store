@@ -6,7 +6,7 @@ class TestViews(TestCase):
 
     def test_user_access_profile_page(self):
         """
-        Test if testuser can access profile
+        Test if an authenticated user can access profile
         """
         user = User.objects.create_superuser(
             'myuser', 'myemail@test.com', 'password')
@@ -17,8 +17,8 @@ class TestViews(TestCase):
 
     def test_profile_logged_out(self):
         """
-        Test if logged out user gets redirected
-        when trying to access profile link
+        Test if a non-authenticated user gets redirected
+        when trying to access profile page
         """
         response = self.client.get('/profile/')
         self.assertEqual(response.status_code, 302)

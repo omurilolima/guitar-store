@@ -630,6 +630,7 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 | add_product as non-admin user | Testing add a product to the store with a non-admin user | Receives code 301 and is redirected | PASS |
 | edit_product | Testing update product info in the store | Product info is updated  | PASS |
 | delete_product | Testing delete a product | Product is deleted | PASS |
+| Bag page | Testing load bag page | Page loaded with bag/bag.html template | PASS |
 
 Back to [top](#guitar-store)
 
