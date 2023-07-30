@@ -604,6 +604,11 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 | ProductForm - Image URL | Input empty value and click submit | Image URL is not required | PASS |
 | ProductForm - Fields displayed | Check if all fields are explicit in form_metaclass | All the listed fields in the ProductForm are shown for the user. | PASS |
 
+### Models
+| Test Label | Test Action | Expected Outcome | Test Outcome |
+| --- | --- | --- | --- |
+| Create Product | Testing create a product | Product created | PASS |
+
 
 ### Views
 
