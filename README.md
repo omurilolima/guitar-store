@@ -614,11 +614,11 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 
 | Test Label | Test Action | Expected Outcome | Test Outcome |
 | --- | --- | --- | --- |
-| all_products | Testing load all products | Page loaded with products/products.html template | 🛑🛑|
-| product_detail | Testing load individual product details | Page loaded with products/product_detail.html template | 🛑🛑|
-| add_product | Testing add a product to the store | Product is created | 🛑🛑|
-| edit_product | Testing update product info in the store | Product info is updated  | 🛑🛑|
-| delete_product | Testing delete a product | Product is deleted | 🛑🛑|
+| all_products | Testing load all products | Page loaded with products/products.html template | PASS |
+| product_detail | Testing load individual product details | Page loaded with products/product_detail.html template | PASS |
+| add_product as non-admin user | Testing add a product to the store with a non-admin user | Receives code 301 and is redirected | PASS |
+| edit_product | Testing update product info in the store | Product info is updated  | PASS |
+| delete_product | Testing delete a product | Product is deleted | PASS |
 
 Back to [top](#guitar-store)
 

@@ -1,6 +1,5 @@
 from django.test import TestCase
 from .models import Product, Category
-from profiles.models import User
 
 
 class TestProductModel(TestCase):
