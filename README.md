@@ -598,10 +598,11 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 🛑🛑 TO-DO
 | Test Label | Test Action | Expected Outcome | Test Outcome |
 | --- | --- | --- | --- |
-| ProductForm - Name | Input empty value and click submit | Error message: “This field is required” | 🛑🛑|
-| ProductForm - Description | Input empty value and click submit | Error message: “This field is required” | 🛑🛑|
-| ProductForm - Price | Input empty value and click submit | Error message: “This field is required” | 🛑🛑|
-| ProductForm - Fields displayed | Check if the 'title', 'slug', 'image_url',' author', 'number_of_pages', 'category',' about', 'status', 'rating', 'data_started_reading', and 'date_finished_reading', fields are explicit in comment metaclass | Only the listed fields in the test are shown for the user. | 🛑🛑|
+| ProductForm - Name | Input empty value and click submit | Error message: “This field is required” | PASS |
+| ProductForm - Description | Input empty value and click submit | Error message: “This field is required” | PASS |
+| ProductForm - Price | Input empty value and click submit | Error message: “This field is required” | PASS |
+| ProductForm - Image URL | Input empty value and click submit | Image URL is not required | PASS |
+| ProductForm - Fields displayed | Check if all fields are explicit in form_metaclass | All the listed fields in the ProductForm are shown for the user. | PASS |
 
 
 ### Views
