@@ -631,6 +631,7 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 | edit_product | Testing update product info in the store | Product info is updated  | PASS |
 | delete_product | Testing delete a product | Product is deleted | PASS |
 | Bag page | Testing load bag page | Page loaded with bag/bag.html template | PASS |
+| Add to Bag | Testing add a product in the bag and the bag in the session | Product added to the bag and the session | PASS |
 
 Back to [top](#guitar-store)
 

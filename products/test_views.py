@@ -28,7 +28,8 @@ class TestProductViews(TestCase):
         )
 
         product_detail = self.client.get('/products/1/')
-        self.assertTemplateUsed(product_detail, 'products/product_detail.html')
+        self.assertTemplateUsed(
+            product_detail, 'products/product_detail.html')
 
     def test_nonadmin_redirect_creating_product(self):
         """
@@ -43,10 +44,12 @@ class TestProductViews(TestCase):
         """
         Test update product info in the store
         """
-        user = User.objects.create_superuser('myuser', 'myemail@test.com', 'password')
+        user = User.objects.create_superuser(
+            'myuser', 'myemail@test.com', 'password')
         self.client.force_login(user)
 
-        category = Category.objects.create(name='lespaul', friendly_name='les paul')
+        category = Category.objects.create(
+            name='lespaul', friendly_name='les paul')
         product = Product.objects.create(
             category=category,
             sku='12345',
@@ -79,10 +82,12 @@ class TestProductViews(TestCase):
         """
         Test delete a product
         """
-        user = User.objects.create_superuser('myuser', 'myemail@test.com', 'password')
+        user = User.objects.create_superuser(
+            'myuser', 'myemail@test.com', 'password')
         self.client.force_login(user)
 
-        category = Category.objects.create(name='lespaul', friendly_name='les paul')
+        category = Category.objects.create(
+            name='lespaul', friendly_name='les paul')
         product = Product.objects.create(
             category=category,
             sku='12345',
