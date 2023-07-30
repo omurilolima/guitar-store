@@ -603,6 +603,13 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 | ProductForm - Price | Input empty value and click submit | Error message: “This field is required” | PASS |
 | ProductForm - Image URL | Input empty value and click submit | Image URL is not required | PASS |
 | ProductForm - Fields displayed | Check if all fields are explicit in form_metaclass | All the listed fields in the ProductForm are shown for the user. | PASS |
+| CheckoutForm - full_name required | Input empty value and click submit | Error message: “This field is required” | PASS |
+| CheckoutForm - email required | Input empty value and click submit | Error message: “This field is required” | PASS |
+| CheckoutForm - phone_number required | Input empty value and click submit | Error message: “This field is required” | PASS |
+| CheckoutForm - street_address1 required | Input empty value and click submit | Error message: “This field is required” | PASS |
+| CheckoutForm - street_address2 not required | Input empty value and click submit | Error message: “This field is required” | PASS |
+| CheckoutForm - town_or_city required | Input empty value and click submit | Error message: “This field is required” | PASS |
+| CheckoutForm - county required | Input empty value and click submit | Error message: “This field is required” | PASS |
 | CommentForm body | Input empty value and click submit | Error message: “This field is required” | PASS |
 | CommentForm fields | body field is explicit in form metaclass  | Field displayed | PASS |
 
