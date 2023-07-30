@@ -491,7 +491,130 @@ Option 2 (Django):
 
 ## Testing
 
-For all testing, please refer to the [TESTING.md](TESTING.md) file.
+### HTML Code Validation
+
+The W3C Markup Validation Service was used to validate the HTML of the website. All Django template tags were manually removed with the HTML code copied and inserted to the base template.
+🛑🛑 TO-DO
+<details>
+<summary><strong>base.html</strong> </summary>
+
+
+</details>
+
+<details>
+<summary> <strong>add-book.html</strong></summary>
+
+</details>
+
+<details>
+<summary> <strong>book_detail.html</strong></summary>
+
+
+</details>
+
+<details>
+<summary> <strong>books.html</strong></summary>
+
+
+</details>
+
+<details>
+<summary> <strong>edit_books.html</strong></summary>
+
+
+</details>
+
+<details>
+<summary> <strong>index.html</strong></summary>
+
+
+</details>
+
+<details>
+<summary> <strong>post_detail.html</strong></summary>
+
+
+</details>
+
+### CSS Code Validation
+🛑🛑 TO-DO
+No errors were found when passing the CSS file through the The W3C CSS Validator.
+
+<details>
+<summary> <strong>CSS file validation results</strong></summary>
+
+
+</details>
+
+### Manual testing
+🛑🛑 TO-DO
+| Test Label | Test Action | Expected Outcome | Test Outcome |
+| --- | --- | --- | --- |
+| Site loading | Navigate to the “home page”, “login”, “Register”, “Add a book”, “logout” and “My books” page. | All the pages and elements are loaded according. | 🛑🛑  |
+| Read a blog post | On the blog homepage, click on one of the cards presented in the “blog posts” section. | All the elements of post_detail are loaded according. | 🛑🛑 |
+| Leave a comment without logging | On the “post page”, without having logged in, go to the comment section. | A message informing that “To see the comments and leave a comment, please log in or create an account.” must be presented followed by the buttons “login” and “register”. | 🛑🛑 |
+| Leave a comment being logged in. | On the “post page”, having logged in, go to the comment section. Write some text and hit the “submit” button. | A message informing that “Your comment is awaiting approval” must be displayed. | 🛑🛑  |
+| Like a post | On the “post page”, click on the heart icon. | The counter of likes must increase by 1. | 🛑🛑  |
+| Add a product | On the navbar, click the “Product Management” option, fill out the form and hit the “Submit” button. | A success message must be displayed and the product must be listed on the “All Products” page. | 🛑🛑 |
+| Edit a product | On the products page, click the “Edit” button, change some info on the form and hit the “Submit” button. | A success message must be displayed and the product info must be updated. | 🛑🛑 |
+| Delete a Product | On the products page, click the “Delete” button and click the “Delete” button in the confirmation popup. | The product must be deleted. | 🛑🛑 |
+
+### Browser Testing
+🛑🛑 TO-DO
+I have tested this application works on the following installed browsers, using a Dell laptop on Windows OS:
+
+- Microsoft Edge 112.0.1722.68
+- Google Chrome Version 112.0.5615.138
+- Firefox Browser 112.0.1
+
+I have tested this application works on the following Android devices using Chrome browser 112.0.5615.138:
+
+- Samsung Galaxy S20FE with Android 13.
+- Samsung Galaxy S22 with Android 13.
+
+### Responsiveness
+🛑🛑 TO-DO
+I used Chrome developer tool to check the responsiveness on different screen sizes:
+- 375px (Mobile)
+- 728px (Tablet)
+- 1024px (laptop)
+- 4k (Monitor resolution)
+
+### Automatic Testing
+🛑🛑 TO-DO
+Django testing tools have been used to perform basic automatic testing on Guitar Store Python code for validating the main logical thing. Tests were run using the local SQLite3 database as opposed to the production PostgreSQL database.
+
+Test scripts were written for the following blog app files;
+
+models.py
+views.py
+forms.py
+
+Those tests achieve 90% coverage. The results so far are highlighted in the summary report below:
+
+![Coverage report](/media/Coverage%20report.png)
+
+### Forms
+🛑🛑 TO-DO
+| Test Label | Test Action | Expected Outcome | Test Outcome |
+| --- | --- | --- | --- |
+| ProductForm - Name | Input empty value and click submit | Error message: “This field is required” | 🛑🛑|
+| ProductForm - Description | Input empty value and click submit | Error message: “This field is required” | 🛑🛑|
+| ProductForm - Price | Input empty value and click submit | Error message: “This field is required” | 🛑🛑|
+| ProductForm - Fields displayed | Check if the 'title', 'slug', 'image_url',' author', 'number_of_pages', 'category',' about', 'status', 'rating', 'data_started_reading', and 'date_finished_reading', fields are explicit in comment metaclass | Only the listed fields in the test are shown for the user. | 🛑🛑|
+
+
+### Views
+
+| Test Label | Test Action | Expected Outcome | Test Outcome |
+| --- | --- | --- | --- |
+| all_products | Testing load all products | Page loaded with products/products.html template | 🛑🛑|
+| product_detail | Testing load individual product details | Page loaded with products/product_detail.html template | 🛑🛑|
+| add_product | Testing add a product to the store | Product is created | 🛑🛑|
+| edit_product | Testing update product info in the store | Product info is updated  | 🛑🛑|
+| delete_product | Testing delete a product | Product is deleted | 🛑🛑|
+
+Back to [top](#guitar-store)
 
 ## Deployment
 
