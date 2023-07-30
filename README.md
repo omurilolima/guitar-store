@@ -610,6 +610,7 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 | Test Label | Test Action | Expected Outcome | Test Outcome |
 | --- | --- | --- | --- |
 | Create Product | Testing create a product | Product created | PASS |
+| Comment | Creating a comment | str( ) method called by str() return the default f-string. | PASS |
 
 
 ### Views
