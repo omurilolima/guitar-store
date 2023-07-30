@@ -603,6 +603,8 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 | ProductForm - Price | Input empty value and click submit | Error message: “This field is required” | PASS |
 | ProductForm - Image URL | Input empty value and click submit | Image URL is not required | PASS |
 | ProductForm - Fields displayed | Check if all fields are explicit in form_metaclass | All the listed fields in the ProductForm are shown for the user. | PASS |
+| CommentForm body | Input empty value and click submit | Error message: “This field is required” | PASS |
+| CommentForm fields | body field is explicit in form metaclass  | Field displayed | PASS |
 
 ### Models
 | Test Label | Test Action | Expected Outcome | Test Outcome |
@@ -614,6 +616,7 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 
 | Test Label | Test Action | Expected Outcome | Test Outcome |
 | --- | --- | --- | --- |
+| home | Testing load homepage | Page loaded with home/index.html template | PASS |
 | all_products | Testing load all products | Page loaded with products/products.html template | PASS |
 | product_detail | Testing load individual product details | Page loaded with products/product_detail.html template | PASS |
 | add_product as non-admin user | Testing add a product to the store with a non-admin user | Receives code 301 and is redirected | PASS |
