@@ -77,6 +77,8 @@ class TestProductViews(TestCase):
 
         edited_product = Product.objects.filter(name="product_updated")
         self.assertEqual(len(edited_product), 1)
+        # response = self.client.get(f'/products/{edited_product.id}')
+        # self.assertTemplateUsed(response, 'products/product_detail.html')
 
     def test_delete_product(self):
         """
