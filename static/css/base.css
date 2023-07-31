@@ -309,6 +309,13 @@ body > footer {
     font-size: 18px;
 }
 
+/* Product Detail */
+.product_image img {
+    width: 50rem;
+    height: 50rem;
+    object-fit: contain;
+}
+
 /* Product Form */
 .btn-file {
     position: relative;
