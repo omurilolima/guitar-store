@@ -291,6 +291,24 @@ body > footer {
 	color: #17a2b8; /* text-info */
 }
 
+/* All products */
+.all_products img {
+    width: inherit;
+    height: 25rem;
+    object-fit: cover;
+    margin-left: 5rem;
+}
+    
+.all_products .card {
+    width: 20rem;
+    height: 35em;
+    /* border: none; */
+}
+
+.all_products h2 {
+    font-size: 18px;
+}
+
 /* Product Form */
 .btn-file {
     position: relative;
