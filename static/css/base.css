@@ -171,6 +171,40 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* Blog */
+.blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.post_list {
+    display: flex;
+    flex-flow: row;
+}
+
+
+.post_list img {
+    width: inherit;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.post_list .card {
+    width: 35rem;
+    height: 30em;
+    margin: 3rem;
+}
+
+.post_list h2 {
+    font-size: 24px;
+}
+
+.post_list p, 
+small {
+    font-size: 16px;
+}
+
 /* Footer */
 
 body > footer {
@@ -354,4 +388,17 @@ body > footer {
         padding: .25rem .5rem !important;
     }
 
+    .blog {
+        flex-direction: column;
+    }
+
+    .post_list {
+        flex-direction: column;
+    }
+    .post_list .card {
+        width: 40rem;
+    }
+    .post_list img {
+        height: 18rem;
+    }
 }
