@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/guitar_store_paul_maccartney.jpg') no-repeat center center fixed;
+    background: url('/media/Gibson-Murphy-Lab-ES335.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     color: #555;
@@ -34,7 +34,10 @@ body h3 {
 .shop-now-button {
     background: black !important;
     color: white !important;
-    min-width: 260px;
+    min-width: 10em;
+    margin-bottom: 1.5em;
+    margin-left: 1.5em;
+    height: 3em;
 }
 
 .cta-home {

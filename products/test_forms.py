@@ -1,5 +1,6 @@
 from django.test import TestCase
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
+from profiles.models import User
 
 
 class TestProductForm(TestCase):
@@ -33,3 +34,26 @@ class TestProductForm(TestCase):
         self.assertEqual(form.Meta.fields, (
             '__all__'
         ))
+
+
+class TestReviewForm(TestCase):
+    """
+    Testing fields of the ReviewForm
+    used for leaving a product review
+    """
+    def test_add_review(self):
+        user = User.objects.create_superuser(
+            'myuser', 'myemail@test.com', 'password')
+        self.client.force_login(user)
+        form = ReviewForm({'body': 'test_review'})
+        self.assertTrue(form.is_valid())
+
+    def test_body_is_required(self):
+        form = ReviewForm({'body': ''})
+        self.assertFalse(form.is_valid())
+        self.assertIn('body', form.errors.keys())
+        self.assertEqual(form.errors['body'][0], 'This field is required.')
+
+    def test_field_is_explicit_in_form_metaclass(self):
+        form = ReviewForm()
+        self.assertEqual(form.Meta.fields, ('body',))

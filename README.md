@@ -547,7 +547,7 @@ No errors were found when passing the CSS file through the The W3C CSS Validator
 </details>
 
 ### Manual testing
-🛑🛑 TO-DO
+
 | Test Label | Test Action | Expected Outcome | Test Outcome |
 | --- | --- | --- | --- |
 | Site loading | Navigate to the “Homepage”, “Login”, “Register”, “Add a product”, “Logout” and “All Products”, "Blog", "Blog Post" page. | All the pages and elements are loaded according. | PASS  |
@@ -610,6 +610,10 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 | CheckoutForm - county required | Input empty value and click submit | Error message: “This field is required” | PASS |
 | CommentForm body | Input empty value and click submit | Error message: “This field is required” | PASS |
 | CommentForm fields | body field is explicit in form metaclass  | Field displayed | PASS |
+| Add comment | Add a comment in a blog post  | Comment added | PASS |
+| ReviewForm body | Input empty value and click submit | Error message: “This field is required” | PASS |
+| ReviewForm fields | body field is explicit in form metaclass  | Field displayed | PASS |
+| Add review | Add a product review  | Review added | PASS |
 
 ### Models
 | Test Label | Test Action | Expected Outcome | Test Outcome |
