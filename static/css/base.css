@@ -347,6 +347,14 @@ body > footer {
     border-radius: 0;
 }
 
+/* Bag */
+.bag-image img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Larger screens */
