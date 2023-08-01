@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+from . import custom_storages
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
@@ -201,9 +202,9 @@ if 'USE_AWS' in os.environ:
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
     # Static and Media Files
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_STORAGE = custom_storages.StaticStorage
     STATICFILES_LOCATION = 'static'
-    DEFAULT_FILES_STORAGE = 'custom_storages.MediaStorage'
+    DEFAULT_FILES_STORAGE = custom_storages.MediaStorage
     MEDIAFILES_LOCATION = 'media'
 
     # Override static and media URLs in production
