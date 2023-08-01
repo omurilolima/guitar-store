@@ -1,33 +1,31 @@
-# GUITAR STORE
+# Guitar Store
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+Developer: <a href='https://www.linkedin.com/in/omurilolima/' target='_blank'>Murilo Lima</a>
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
+Visit the [live site](https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/)
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-
-🛑 LINK 🛑
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
+This is my final project for the Full-Stack Software Development Course at Code Institute / University College Dublin
 
 🛑 SCREENSHOT 🛑
 
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
+## Introdution
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+The Guitar Store is a comprehensive Django website specialized created for an Irish local store sell guitars online. There, users can search for products, buy them securely using Stripe Payments,  create a profile to leave product reviews, besides to keep an Order History. Also, the site a newsletter sign up and a blog section where users  can find content about Music and Instruments and interact adding a comment or liking a post.
+
+### Business goals addressed with this site
+- Build brand awareness;
+- Prensent the business value proposition with high-quality content;
+- Catch customer's attention and offer a good experience on buying a new guitar.
+
+### Customer needs
+- Understand the purpose of the Guitar Store;
+- Buy a new guitar.
+- Keep Order History.
+- Signup to the newsletter for receiving news and 
+discount cupoms.
+- Interact with content about music and guitar;
+
+Back to [top](#table-of-contents)
 
 ## UX
 
