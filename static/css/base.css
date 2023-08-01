@@ -186,14 +186,14 @@ input[name='q']::placeholder {
 
 .post_list img {
     width: inherit;
-    height: 15rem;
+    height: 17rem;
     object-fit: cover;
 }
 
 .post_list .card {
-    width: 35rem;
-    height: 30em;
-    margin: 3rem;
+    width: 21rem;
+    height: 35em;
+    margin-bottom: 3rem;
 }
 
 .post_list h2 {
@@ -345,14 +345,15 @@ body > footer {
 
 /* -------------------------------- Media Queries */
 
-/* Slightly larger container on xl screens */
+/* Larger screens */
 @media (min-width: 1200px) {
     .container {
       max-width: 80%;
     }
+
 }
 
-/* fixed top navbar only on medium and up */
+/* Medium screens */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -365,6 +366,31 @@ body > footer {
     .header-container {
         padding-top: 164px;
     }
+
+    .post_list {
+        flex-flow: row;
+    }
+
+    .post_list .card {
+        margin: 0 0.5em;
+        width: 19rem;
+        height: 35em;
+    }
+
+}
+
+/* Small screens*/
+@media (max-width: 991px) {
+    .post_list {
+        flex-flow: row;
+    }
+
+    .post_list .card {
+        margin: 1rem;
+        width: 21rem;
+        height: 35em;
+    }
+
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -419,11 +445,5 @@ body > footer {
 
     .post_list {
         flex-direction: column;
-    }
-    .post_list .card {
-        width: 40rem;
-    }
-    .post_list img {
-        height: 18rem;
     }
 }
