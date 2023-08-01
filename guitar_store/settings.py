@@ -38,7 +38,7 @@ ALLOWED_HOSTS = [
     '8000-omurilolima-guitarstore-gllkt1xv7em.ws-eu102.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.8000-omurilolima-guitarstore-fh56o6l9tcu.ws-eu101.gitpod.io',
+    'https://*.8000-omurilolima-guitarstore-gllkt1xv7em.ws-eu102.gitpod.io',
     'https://*.127.0.0.1']
 
 # Application definition
