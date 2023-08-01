@@ -25,6 +25,11 @@ The Guitar Store is a comprehensive Django website specialized created for an Ir
 discount cupoms.
 - Interact with content about music and guitar;
 
+### Ideal client
+- English speaking;
+- Has interest about guitar;
+- Want to buy a new instrument.
+
 Back to [top](#table-of-contents)
 
 ## UX

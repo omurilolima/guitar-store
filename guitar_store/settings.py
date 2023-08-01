@@ -15,14 +15,7 @@ import os
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
-import cloudinary
 
-# Cloudinary config
-cloudinary.config( 
-  cloud_name="dr3djjbyy",
-  api_key="391326746464634",
-  api_secret="XRjifKeCwTXG7UPXOom2wEKjTSE"
-)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
@@ -34,10 +27,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 # TODO: Change the secret key to an empty string
 SECRET_KEY = os.environ.get(
-    'SECRET_KEY', '')
+    'SECRET_KEY', 'sia@o6$oxk466^e8#su23sonr!)e9ijknx%!%u#s0&v!+@mbli')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
+# 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     'murilo-guitar-shop-dee69b8139e5.herokuapp.com',
@@ -55,9 +49,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
-    'cloudinary_storage',
     "django.contrib.staticfiles",
-    'cloudinary',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -192,12 +184,9 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-DEFAULT_FILES_STORAGE = 'custom_storage.storage.MediaCloudinaryStorage'
-
 
 if 'USE_AWS' in os.environ:
     # Cache Control
