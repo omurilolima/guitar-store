@@ -6,7 +6,8 @@ from django.db.models.functions import Lower
 
 
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
+from django.views import View
 
 
 def all_products(request):
@@ -64,12 +65,45 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.filter(approved=True).order_by('created_on')
 
     context = {
         'product': product,
+        'reviews': reviews,
+        'reviewed': False,
+        'review_form': ReviewForm(),
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+@login_required
+def add_product_review(request, product_id):
+    """ A view to handle product review """
+    product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.filter(approved=True).order_by('created_on')
+    if request.method == 'POST':
+        review_form = ReviewForm(request.POST)
+        if review_form.is_valid():
+            review_form.instance.email = request.user.email
+            review_form.instance.name = request.user.username
+            review = review_form.save(commit=False)
+            review.product = product
+            review.save()
+        else:
+            review_form = ReviewForm()
+            messages.error(
+                request,
+                'Failed to add product review. Please ensure the form is valid.')
+
+        context = {
+            'product': product,
+            'reviews': reviews,
+            'reviewed': True,
+            'reviews_form': ReviewForm(),
+        }
+
+        return render(request, 'products/product_detail.html', context)
 
 
 @login_required

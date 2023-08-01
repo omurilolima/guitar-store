@@ -12,7 +12,7 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container mt-3">
-    <div class="row g-0">
+    <div class="row">
         <div class="col-md-6 masthead-text">
             <!-- Post title goes in these h1 tags -->
             <h1 class="post-title">
@@ -68,8 +68,8 @@
             </div>
         </div>
     </div>
-    <div class="row comments justify-content-evenly mb-4">
-        <div class="col-md-7 card">
+    <div class="row comments justify-content-center mb-4">
+        <div class="col-md-7 mr-3 card">
             <div class="card-body">
                 {% if user.is_authenticated %}
                 <h3>Comments:</h3>

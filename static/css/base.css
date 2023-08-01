@@ -10,6 +10,10 @@ body {
     font-family: 'Lato';
 }
 
+body h3 {
+    font-size: 18px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
