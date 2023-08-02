@@ -193,6 +193,7 @@ Back to [top](#table-of-contents)
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [Figma](https://figma.com): used for creating wireframes.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [Lucidchart](https://www.lucidchart.com/) used to design the database diagram.
 
 ### Code Validation
 - [JSHint](https://jshint.com/): used for Javascript code validation.
@@ -205,26 +206,38 @@ Back to [top](#table-of-contents)
 
 ## Database Design
 
-Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
-Understanding the relationships between different tables can save time later in the project.
+Before starting code and create models, I built a Relationship Diagrams (ERD) with [Lucidchard](https://lucid.app/) to better visualize the database architecture.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+![database-driagram](documentation/Guitar%20Store%20-%20Database%20ER%20diagram.png) 
 
-Using your defined models (one example below), create an ERD with the relationships identified.
+### Models
+The following models were created for Guitar Store.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- Category
+```python
+class Category(models.Model):
 
+    class Meta:
+        verbose_name_plural = 'Categories'
+
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
+```
+
+- Product
 ```python
 class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)  # noqa
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
@@ -232,35 +245,183 @@ class Product(models.Model):
         return self.name
 ```
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+- Review
+```python
+class Review(models.Model):
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name='reviews')
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
 
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+    class Meta:
+        ordering = ['created_on']
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+    def __str__(self):
+        return f'Review {self.body} by {self.name}'
 
-![screenshot](documentation/erd.png)
+```
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+- Profile
+```python
+class UserProfile(models.Model):
+    """
+    A user profile model for maintaining default
+    delivery information and order history
+    """
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    default_phone_number = models.CharField(
+        max_length=20, null=True, blank=True)
+    default_street_address1 = models.CharField(
+        max_length=80, null=True, blank=True)
+    default_street_address2 = models.CharField(
+        max_length=80, null=True, blank=True)
+    default_town_or_city = models.CharField(
+        max_length=40, null=True, blank=True)
+    default_county = models.CharField(
+        max_length=80, null=True, blank=True)
+    default_postcode = models.CharField(
+        max_length=20, null=True, blank=True)
+    default_country = CountryField(
+        blank_label='Country', null=True, blank=True)
 
-Using Markdown formatting to represent an example ERD table using the Product model above:
+    def __str__(self):
+        return self.user.username
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+```
 
-- Table: **Product**
+- Order
+```python
+class Order(models.Model):
 
-    | **PK** | **id** (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | **FK** | category | ForeignKey | FK to **Category** model |
-    | | sku | CharField | |
-    | | name | CharField | |
-    | | description | TextField | |
-    | | has_sizes | BooleanField | |
-    | | price | DecimalField | |
-    | | rating | DecimalField | |
-    | | image_url | URLField | |
-    | | image | ImageField | |
+    order_number = models.CharField(max_length=32, null=False, editable=False)
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
+                                     null=True, blank=True,
+                                     related_name='orders')
+    full_name = models.CharField(max_length=50, null=False, blank=False)
+    email = models.EmailField(max_length=254, null=False, blank=False)
+    phone_number = models.CharField(max_length=20, null=False, blank=False)
+    country = CountryField(blank_label='Country *', null=False, blank=False)
+    postcode = models.CharField(max_length=20, null=True, blank=True)
+    town_or_city = models.CharField(max_length=40, null=False, blank=False)
+    street_address1 = models.CharField(max_length=80, null=False, blank=False)
+    street_address2 = models.CharField(max_length=80, null=True, blank=True)
+    county = models.CharField(max_length=80, null=True, blank=True)
+    date = models.DateTimeField(auto_now_add=True)
+    delivery_cost = models.DecimalField(
+        max_digits=6, decimal_places=2, null=False, default=0)
+    order_total = models.DecimalField(
+        max_digits=10, decimal_places=2, null=False, default=0)
+    grand_total = models.DecimalField(
+        max_digits=10, decimal_places=2, null=False, default=0)
+    original_bag = models.TextField(
+        null=False, blank=False, default='')
+    stripe_pid = models.CharField(
+        max_length=254, null=False, blank=False, default='')
+
+    def _generate_order_number(self):
+        """
+        Generate a random, unique order number using UUID
+        """
+        return uuid.uuid4().hex.upper()
+
+    def update_total(self):
+        """
+        Update grand total each time a line item is added
+        accounting for delivery costs.
+        """
+        self.order_total = self.lineitems.aggregate(
+            Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
+            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100  # noqa
+        else:
+            self.delivery_cost = 0
+        self.grand_total = self.order_total + self.delivery_cost
+        self.save()
+
+    def save(self, *args, **kwargs):
+        """ Override the original save method to set the order number
+        if it hasn't been set already
+        """
+        if not self.order_number:
+            self.order_number = self._generate_order_number()
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.order_number
+
+```
+
+- Order Line Item
+```python
+class OrderLineItem(models.Model):
+
+    order = models.ForeignKey(
+        Order, null=False, blank=False,
+        on_delete=models.CASCADE, related_name='lineitems')
+    product = models.ForeignKey(
+        Product, null=False, blank=False, on_delete=models.CASCADE)
+    quantity = models.IntegerField(null=False, blank=False, default=0)
+    lineitem_total = models.DecimalField(
+        max_digits=6, decimal_places=2, null=False,
+        blank=False, editable=False)
+
+    def save(self, *args, **kwargs):
+        """
+        Override the original save method to set the lineitem total
+        and update the order total.
+        """
+        self.lineitem_total = self.product.price * self.quantity
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f'SKU {self.product.sku} on order {self.order.order_number}'
+```
+
+- Post
+```python
+class Post(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='blog_post')
+    updated_on = models.DateTimeField(auto_now=True)
+    content = models.TextField()
+    featured_image = models.ImageField(null=True, blank=True)
+    excerpt = models.TextField(blank=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+    status = models.IntegerField(choices=STATUS, default=0)
+    likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
+
+    class Meta:
+        ordering = ['-created_on']
+
+    def __str__(self):
+        return self.title
+
+    def number_of_likes(self):
+        return self.likes.count()
+```
+
+- Comment
+```python
+class Comment(models.Model):
+    post = models.ForeignKey(
+        Post, on_delete=models.CASCADE, related_name='comments')
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['created_on']
+
+    def __str__(self):
+        return f'Comment {self.body} by {self.name}'
+```
 
 Back to [top](#table-of-contents)
 
@@ -268,37 +429,19 @@ Back to [top](#table-of-contents)
 
 ### GitHub Projects
 
-GitHub Projects served as an Agile tool for this project.
-It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
+For this project, GitHub Projects was utilized as an Agile tool. While it's not a specialized tool, it can be customized with the appropriate tags and project creation/issue assignments to make it effective. User stories, issues, and milestone tasks were planned using it, then tracked on a weekly basis using the basic Kanban board.
 
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
+![kanban-board](documentation/kanban-board.png) 
 
 ### GitHub Issues
 
-GitHub Issues served as an another Agile tool.
-There, I used my own **User Story Template** to manage user stories.
+GitHub Issues served as an another Agile tool for manage the issues throughout the development process.
 
-It also helped with milestone iterations on a weekly basis.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-
+![github-issues](documentation/github-issues.png) 
 
 ### MoSCoW Prioritization
 
-I've decomposed my Epics into stories prior to prioritizing and implementing them.
-Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+For prioritization, I used the MoSCow framework, adding labels to my tasks and user stories within the Github Issues.
 
 - **Must Have**: guaranteed to be delivered (*max 60% of stories*)
 - **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
@@ -307,70 +450,52 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 
 ## Ecommerce Business Model
 
-This site sells goods to individual customers, and therefore follows a `Business to Customer` model.
-It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
-such as monthly/annual subscriptions.
+The Guitar Store is dedicated to selling products to individual customers through a simple Business to Customer model (B2B). The site is still in its early stages; however, it already offers a newsletter and social media marketing links to promote the business. By leveraging social media platforms like Facebook, we can build a community of users around the site, leading to an increase in visitor numbers and consequently more purchases.
 
-It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
-
-Social media can potentially build a community of users around the business, and boost site visitor numbers,
-especially when using larger platforms such a Facebook.
-
-A newsletter list can be used by the business to send regular messages to site users.
-For example, what items are on special offer, new items in stock,
-updates to business hours, notifications of events, and much more!
+The newsletter is an effective tool for us to communicate regular updates to our users. It is an excellent way to share information about special offers, new product updates, changes in business hours, notifications of events, and more. Our goal is to ensure that our users are always up-to-date and informed.
 
 Back to [top](#table-of-contents)
 
 ## Search Engine Optimization (SEO) & Social Media Marketing
 
-### Keywords
+### Description and Keywords
 
-I've identified some appropriate keywords to align with my site, that should help users
-when searching online to find my page easily from a search engine.
-This included a series of the following keyword types
-
-- Short-tail (head terms) keywords
-- Long-tail keywords
-
-I also played around with [Word Tracker](https://www.wordtracker.com) a bit
-to check the frequency of some of my site's primary keywords (only until the free trial expired).
+The following description and kewwords were used as meta tags for improve the score of the site in search engines:
+- Description:
+```
+<meta name="description" content="Find your new Instrument at Guitar Store, in Dublin, Ireland">
+```
+- Keywords:
+```
+<meta name="keywords" 
+	content="Guitar, Store, Shop, Instrument, Dublin, Ireland, Les Paul, Strat,
+	Telecaster, Semihollow, Fender, Gibson, Epiphone, Ibanez">
+```
 
 ### Sitemap
 
-I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
-This was generated using my deployed site URL: 🛑 LINK 🛑
-
-After it finished crawling the entire site, it created a
-[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
+I used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
+This is the file generated using my deployed site URL: [sitemap](https://github.com/omurilolima/guitar-store/blob/cc4c8fff5492ac1db263f1607fe81a0ccb2ebf14/sitemap.xml)
 
 ### Robots
 
-I've created the [robots.txt](robots.txt) file at the root-level.
-Inside, I've included the default settings:
+The [robots.txt](robots.txt) file is at the root-level of this project.
+Inside, I've included the default settings as follows:
 
 ```
 User-agent: *
-Disallow:
-Sitemap: 🛑 LINK 🛑
+Disallow: /profiles/
+Disallow: /bag/
+Sitemap: https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/sitemap.xml
 ```
-
-Further links for future implementation:
-- [Google search console](https://search.google.com/search-console)
-- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
-- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
-- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
 
 ### Social Media Marketing
 
-Creating a strong social base (with participation) and linking that to the business site can help drive sales.
-Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
+Building a robust social network with active participation and connecting it to your business website can lead to increased sales.
 
-I've created a mockup Facebook business account using the
-[Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
-provided by Code Institute.
+I've created a Facebook business account wich can be acessed in the [following url](https://www.facebook.com/profile.php?id=100095596562947) by the time when this project was sent to Code Institute's validation, but sometimes Facebook exclude 'fake business pages' like these:
 
-![screenshot](documentation/mockup-facebook.png)
+![facebook-page](documentation/facebook-page.png)
 
 ### Newsletter Marketing
 

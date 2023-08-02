@@ -9,162 +9,182 @@
 
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/accounts/login/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/bag/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/?category=semiacoustic</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/?category=lespaul</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/?category=telecaster</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/?category=special</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/?category=semiacoustic,lespaul,telecaster,special</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/blog/</loc>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/21/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/14/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/12/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/31/</loc>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/7/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/2/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/1/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/3/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/15/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/13/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/9/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/18/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/19/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/11/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/6/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/16/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/8/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/17/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/4/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/products/10/</loc>
-  <lastmod>2023-07-28T18:10:09+00:00</lastmod>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/blog/hear-steve-vai-shred-with-one-hand-on-new-song-knappsack/</loc>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/blog/blues-music-is-my-first-love-christone-kingfish-ingram-reveals-five-life-changing-riffs/</loc>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/blog/the-history-of-the-gibson-es-335td/</loc>
+  <lastmod>2023-08-02T20:24:40+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
