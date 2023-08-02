@@ -29,7 +29,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY', 'sia@o6$oxk466^e8#su23sonr!)e9ijknx%!%u#s0&v!+@mbli')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
+
+# 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     'murilo-guitar-shop-dee69b8139e5.herokuapp.com',
@@ -189,8 +191,6 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-
-    AWS_DEFAULT_ACL = None
 
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'murilo-guitar-store'
