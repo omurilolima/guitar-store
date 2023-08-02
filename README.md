@@ -556,12 +556,19 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 
 
 ### CSS Code Validation
-🛑🛑 TO-DO
-No errors were found when passing the CSS file through the The W3C CSS Validator.
+CSS file validation results generated with W3C Validation Service
 
 <details>
-<summary> <strong>CSS file validation results</strong></summary>
+<summary> <strong>base.css</strong></summary>
 
+![base-css](/documentation/code/base-css.png)
+
+</details>
+
+<details>
+<summary> <strong>checkout.css</strong></summary>
+
+![checkout-css](/documentation/code/checkout-css.png)
 
 </details>
 
