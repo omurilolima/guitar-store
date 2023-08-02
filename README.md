@@ -139,16 +139,13 @@ Back to [top](#table-of-contents)
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
+| Feature | Description | Image |
+| --- | --- | --- |
+| Hero image | Presents a big image with a call to action for all products page. | ![screenshot](documentation/hero.png) |
+| Footer | Divided in three section, presents a description of the Guitar Store wich could be used to displays the physical address. A newsletter subscrition form and the social links | ![screenshot](documentation/footer.png) |
+| All Products | This page displays all the available products | ![screenshot](documentation/all-products.png) |
+| Filter by Price or Category | Through the topbar is possible to display the products ordered by price or category | ![screenshot](documentation/by-price-categofy.png) |
+| All Products | Through the topbar is possible to display the products ordered by price or category | ![screenshot](documentation/by-price-categofy.png) |
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
