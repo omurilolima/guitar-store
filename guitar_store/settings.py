@@ -33,11 +33,8 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     'murilo-guitar-shop-dee69b8139e5.herokuapp.com',
-    '8000-omurilolima-guitarstore-gllkt1xv7em.ws-eu102.gitpod.io']
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://*.8000-omurilolima-guitarstore-gllkt1xv7em.ws-eu102.gitpod.io',
-    'https://*.127.0.0.1']
+    '8000-omurilolima-guitarstore-gllkt1xv7em.ws-eu102.gitpod.io',
+    'localhost', '127.0.0.1']
 
 # Application definition
 
