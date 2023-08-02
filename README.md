@@ -137,8 +137,6 @@ Back to [top](#table-of-contents)
 
 ## Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
 | Feature | Description | Image |
 | --- | --- | --- |
 | Hero image | Presents a big image with a call to action for all products page. | ![screenshot](documentation/hero.png) |
@@ -152,38 +150,14 @@ Back to [top](#table-of-contents)
 | Shopping Bag Page | This page informs the items in the bag page for the user to double chech before the checkout. | ![screenshot](documentation/shopping-bag.png) |
 | Checkout Page | This page has the user fill in the delivery details and credit card info. For logged users, the name, email and delivery information can be saved to be pre-fill in the purchase. | ![screenshot](documentation/checkout-page.png)
 | Order Confirmation Page | Once the order is done, the user will be directed to a confirmation page that informs them that an email containing the order confirmation has been sent to their provided email address. | ![screenshot](documentation/order-confirmation-page.png)
-| Profile page | This page stores the user's default delivery information and the order history. Each order number has a link to its order confirmation page | ![screenshot](documentation/profile-page.png)
+| Profile page | This page stores the user's default delivery information and the order history. Each order number has a link to its order confirmation page | ![screenshot](documentation/profile-page.png)|
+| Profile Page | This page stores the user's default delivery information and the order history. Each order number has a link to its order confirmation page | ![screenshot](documentation/profile-page.png)|
+| Error Page | If the user ends up in a broken link or a page the doesn't exist, a error page is displayed informing that the page they are looking for isn't available. | ![screenshot](documentation/error-page.png) |
+| Add Product | As an admin user, there is the possibility of add a new product to the site from the My Account >>> Product Management dropdown menu in the navbar | ![screenshot](documentation/add-product.png) |
+| Review Product | As a logged user, you can leave a product review and help other users who are interested in that produc too. | ![screenshot](documentation/product-review.png) |
+| Blog page | Displays a list of articles about music and products that are sold on the site. | ![screenshot](documentation/blog.png) |
+| Blog post | Displays an article and the comment setion. | ![screenshot](documentation/blog-post.png) |
 
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-### Existing Features
-
-- **Title for feature #1**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature01.png)
-
-- **Title for feature #2**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature02.png)
-
-- **Title for feature #3**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature03.png)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat as necessary for as many features as your site contains.
-
-Hint: the more, the merrier!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Future Features
 
