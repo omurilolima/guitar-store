@@ -159,23 +159,12 @@ Back to [top](#table-of-contents)
 | Blog post | Displays an article and the comment setion. | ![screenshot](documentation/blog-post.png) |
 
 
-### Future Features
+### Features to Implement in Future
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Contact form: Allows the user to send a message to the Site Admin.
+	- As a site user I want to contact the site owners so that I can request further information or lodge a complaint.
+- Delete account: Allows the user to delete their account
+- Wishlist: Allow the user to add a product to their wishlist so that they can receive news and offers about that product.
 
 Back to [top](#table-of-contents)
 
