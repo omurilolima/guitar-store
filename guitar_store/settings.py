@@ -190,6 +190,8 @@ if 'USE_AWS' in os.environ:
         'CacheControl': 'max-age=94608000',
     }
 
+    AWS_DEFAULT_ACL = None
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'murilo-guitar-shop'
     AWS_S3_REGION_NAME = 'eu-west-1'
