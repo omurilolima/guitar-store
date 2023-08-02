@@ -6,7 +6,7 @@ Visit the [live site](https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/)
 
 This is my final project for the Full-Stack Software Development Course at Code Institute / University College Dublin
 
-🛑 SCREENSHOT 🛑
+![screenshot](documentation/the-guitar-store.png)
 
 ## Introdution
 
