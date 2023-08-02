@@ -48,25 +48,25 @@ I used [coolors.co](https://coolors.co/) to generate my colour palette.
 
 ### Typography
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
 I used Google Fonts to select and import the font Poppins, including for main headers and the logo because it is modern but easily readable at the same time. [Lato](https://fonts.google.com/specimen/Lato) was used for all the text.
 
 Example:
 ![font](documentation/lato-google-font.png)
 
+Back to [top](#table-of-contents)
+
 ## User Stories
 
-In order to enhance the efficiency of this project's development process, I mapped out tasks through user stories to build the website to a good standard. In addition, I splited these user stories into epics in order to take an agile approach towards their development.
+In order to enhance the efficiency of this project's development process, I mapped out 34 tasks through 29 user stories to build the website to a good standard. In addition, I splited these user stories into epics in order to take an agile approach towards their development.
 
-View a full list of user stories [here]().
+View a full list of user stories [here](https://github.com/users/omurilolima/projects/4/views/1?layout=table&visibleFields=%5B%22Title%22%2C%22Status%22%2C%22Labels%22%2C%22Milestone%22%5D).
 
 ### EPIC 1: General Site Functionality
 
 - As a first-time visitor, I want to see what the site's purpose is so that I can decide whether or not to continue browsing it. `(MUST HAVE)`
 - As a user I want to navigate the website's pages so that I can find the content I'm looking for. `(MUST HAVE)`
 - As a site user I want to search for specific products in the website. `(SHOULD HAVE)`
-- As a site user I want to contact the site owners so that I can request further information or lodge a complaint. `(COULD HAVE)`
+- As a site user I want to contact the site owners so that I can request further information or lodge a complaint. `(WON'T HAVE)`
 
 ### EPIC 2: Products
 
@@ -74,6 +74,9 @@ View a full list of user stories [here]().
 - As a site user I want to see the product price so that I can make a decision whether or not to purchase. `(MUST HAVE)`
 - As a site user I want to view the product details page for more information about a particular product. `(MUST HAVE)`
 - As a site user I want to sort products by category so that I can find related products of the same category. `(SHOULD HAVE)`
+- As a site user I want to sort products by category so that I can find related products of the same category. `(SHOULD HAVE)`
+
+- As a site user, I want to leave a review of a specific product so that I share my opinion and help other users who want to buy the same product. `(SHOULD HAVE)`
 
 ### EPIC 3: Ordering/Cart Management
 
@@ -84,6 +87,7 @@ View a full list of user stories [here]().
 
 ### EPIC 4: Site User Accounts
 
+- As a site user, I want to login/logout of the site so that I can be an authenticated/not authenticated user. `(MUST HAVE)`
 - As a site user I want to create an account on the site so that I can see a history of my purchases on my account and save my billing and shipping details. `(MUST HAVE)`
 - As a registered user I want to edit my account details so that I can keep them up to date. `(SHOULD HAVE)`
 
@@ -101,10 +105,18 @@ View a full list of user stories [here]().
 
 ### EPIC 7: SEO & Marketing
 
-- As a site admin I want to set appropriate keywords on the site to enhance the chances of potential customers discovering my store via Google searches. `(MUST HAVE)`
+- As a site admin I want to set appropriate meta tags on the site to enhance the chances of potential customers discovering my store via Google searches. `(MUST HAVE)`
 - As a site user I want to sign up for the site's mailing list to receive offers and news. `(SHOULD HAVE)`
-- As a site admin I want to send emails to people who signed up to the site's mailing list so that I can send out news and offers to them. `(COULD HAVE)`
+- As a site admin I want to send emails to people who signed up to the site's mailing list so that I can send out news and offers to them. `(WON'T HAVE)`
 - As a site admin I want to be able to share the business on Facebook so that I can reach and market to a broader audience. `(SHOULD HAVE)`
+
+### EPIC 7: Tests
+- Manual testing
+- Automatic test: Views
+- Automatic test: Forms
+- Automatic test: Model
+
+Back to [top](#table-of-contents)
 
 ## Wireframes
 
@@ -146,6 +158,8 @@ I've used [Figma](https://www.figma.com/) to design my site wireframes.
 Repeat for any addition wireframe pages you have.
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+Back to [top](#table-of-contents)
 
 ## Features
 
@@ -210,6 +224,8 @@ Consider adding any helpful links or notes to help remind you in the future, if 
 - Title for future feature #3
     - Any additional notes about this feature.
 
+Back to [top](#table-of-contents)
+
 ## Tools & Technologies Used
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
@@ -244,6 +260,8 @@ Feel free to delete any unused items below as necessary.
 - [Cloudinary](https://cloudinary.com) used for online static file storage.
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+
+Back to [top](#table-of-contents)
 
 ## Database Design
 
@@ -304,6 +322,8 @@ Using Markdown formatting to represent an example ERD table using the Product mo
     | | image_url | URLField | |
     | | image | ImageField | |
 
+Back to [top](#table-of-contents)
+
 ## Agile Development Process
 
 ### GitHub Projects
@@ -359,6 +379,8 @@ especially when using larger platforms such a Facebook.
 A newsletter list can be used by the business to send regular messages to site users.
 For example, what items are on special offer, new items in stock,
 updates to business hours, notifications of events, and much more!
+
+Back to [top](#table-of-contents)
 
 ## Search Engine Optimization (SEO) & Social Media Marketing
 
@@ -440,6 +462,8 @@ Option 2 (Django):
     - You can trigger an email sent out to subscribed users when new products are added to the site!
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+
+Back to [top](#table-of-contents)
 
 ## Testing
 
@@ -587,7 +611,7 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 | Bag page | Testing load bag page | Page loaded with bag/bag.html template | PASS |
 | Add to Bag | Testing add a product in the bag and the bag in the session | Product added to the bag and the session | PASS |
 
-Back to [top](#guitar-store)
+Back to [top](#table-of-contents)
 
 ## Deployment
 
@@ -913,6 +937,8 @@ Use this space to discuss any differences between the local version you've devel
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
+Back to [top](#table-of-contents)
+
 ## Credits
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
@@ -968,3 +994,5 @@ A few examples have been provided below to give you some ideas.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
 - I would like to thank my wife (Larissa Paz), for believing in me, and allowing me to make this transition into software development.
+
+Back to [top](#table-of-contents)
