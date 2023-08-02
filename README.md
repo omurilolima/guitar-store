@@ -170,38 +170,36 @@ Back to [top](#table-of-contents)
 
 ## Tools & Technologies Used
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+### Programming Languages
 
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
-- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
-- [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
-- [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
-- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [JavaScript](https://www.javascript.com) used for user interaction on the site.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+
+### Hosting and Database
+- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.- 
 - [GitHub](https://github.com) used for secure online code storage.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
-- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
-- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
+
+### Frameworks and Libraries
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
+- [Bootstrap 4](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
+
+### Tools and Web Applications
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
-- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [Figma](https://figma.com): used for creating wireframes.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+
+### Code Validation
+- [JSHint](https://jshint.com/): used for Javascript code validation.
+- [PEP8](https://peps.python.org/pep-0008/): used for Python code validation.
+- [Lighthouse](https://developer.chrome.com/docs/devtools/) Testing site performance on desktop and mobile devices.
+- [W3C HTML](https://validator.w3.org/): used for HTML code validation.
+- [W3C CSS](https://jigsaw.w3.org/css-validator/): used for CSS code validation.
 
 Back to [top](#table-of-contents)
 
