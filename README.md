@@ -60,6 +60,29 @@ The blog posts were oginaly published by [Guitar Player](https://www.guitarplaye
 
 Back to [top](#table-of-contents)
 
+## Agile Development Process
+
+### GitHub Projects
+
+For this project, GitHub Projects was utilized as an Agile tool. While it's not a specialized tool, it can be customized with the appropriate tags and project creation/issue assignments to make it effective. User stories, issues, and milestone tasks were planned using it, then tracked on a weekly basis using the basic Kanban board.
+
+![kanban-board](documentation/kanban-board.png) 
+
+### GitHub Issues
+
+GitHub Issues served as an another Agile tool for manage the issues throughout the development process.
+
+![github-issues](documentation/github-issues.png) 
+
+### MoSCoW Prioritization
+
+For prioritization, I used the MoSCow framework, adding labels to my tasks and user stories within the Github Issues.
+
+- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
+- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
+- **Could Have**: has small impact if left out (*20% of stories*)
+- **Won't Have**: This will not be worked on
+
 ## User Stories
 
 In order to enhance the efficiency of this project's development process, I mapped out 34 tasks through 29 user stories to build the website to a good standard. In addition, I splited these user stories into epics in order to take an agile approach towards their development.
@@ -168,41 +191,6 @@ Back to [top](#table-of-contents)
 
 Back to [top](#table-of-contents)
 
-## Tools & Technologies Used
-
-### Programming Languages
-
-- [Python](https://www.python.org) used as the back-end programming language.
-- [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
-
-### Hosting and Database
-- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.- 
-- [GitHub](https://github.com) used for secure online code storage.
-
-### Frameworks and Libraries
-- [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [Bootstrap 4](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
-- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
-- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-
-### Tools and Web Applications
-- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
-- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
-- [Figma](https://figma.com): used for creating wireframes.
-- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
-- [Lucidchart](https://www.lucidchart.com/) used to design the database diagram.
-
-### Code Validation
-- [JSHint](https://jshint.com/): used for Javascript code validation.
-- [PEP8](https://peps.python.org/pep-0008/): used for Python code validation.
-- [Lighthouse](https://developer.chrome.com/docs/devtools/) Testing site performance on desktop and mobile devices.
-- [W3C HTML](https://validator.w3.org/): used for HTML code validation.
-- [W3C CSS](https://jigsaw.w3.org/css-validator/): used for CSS code validation.
-
-Back to [top](#table-of-contents)
 
 ## Database Design
 
@@ -425,28 +413,6 @@ class Comment(models.Model):
 
 Back to [top](#table-of-contents)
 
-## Agile Development Process
-
-### GitHub Projects
-
-For this project, GitHub Projects was utilized as an Agile tool. While it's not a specialized tool, it can be customized with the appropriate tags and project creation/issue assignments to make it effective. User stories, issues, and milestone tasks were planned using it, then tracked on a weekly basis using the basic Kanban board.
-
-![kanban-board](documentation/kanban-board.png) 
-
-### GitHub Issues
-
-GitHub Issues served as an another Agile tool for manage the issues throughout the development process.
-
-![github-issues](documentation/github-issues.png) 
-
-### MoSCoW Prioritization
-
-For prioritization, I used the MoSCow framework, adding labels to my tasks and user stories within the Github Issues.
-
-- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
-- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
-- **Could Have**: has small impact if left out (*20% of stories*)
-- **Won't Have**: This will not be worked on
 
 ## Ecommerce Business Model
 
@@ -499,34 +465,10 @@ I've created a Facebook business account wich can be acessed in the [following u
 
 ### Newsletter Marketing
 
-I have incorporate a newsletter sign-up form on my application, to allow users to supply their
-email address if they are interested in learning more. 
+In the website footer there is a newsletter sign-up form, to allow users to supply their
+email address if they are interested in receiving news and discounts cupoms.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Option 1 (MailChimp):
-- Sign up for a Mailchimp account
-- This allows up to 2,500 subscription email sends per month
-- Incorporate the code and scripts into your project like in the CI lessons.
-
-Option 2 (Django):
-- Create a custom newsletter app in your project, with a custom model.
-- This method satisfies two assessment criteria:
-    - include a newsletter
-    - one of your custom models
-- It doesn't need anything except the "email" on the model.
-- Example:
-    ```python
-    class Newsletter(models.Model):
-    email = models.EmailField(null=False, blank=False)
-
-    def __str__(self):
-        return self.email
-    ```
-- Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
-    - You can trigger an email sent out to subscribed users when new products are added to the site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![newsletter](documentation/footer.png)
 
 Back to [top](#table-of-contents)
 
@@ -539,43 +481,79 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 <details>
 <summary><strong>base.html</strong> </summary>
 
+![base.html](/documentation/code/base.png)
+</details>
+
+<details>
+<summary> <strong>add-product.html</strong></summary>
+
+![add_product.html](/documentation/code/add_product.png)
 
 </details>
 
 <details>
-<summary> <strong>add-book.html</strong></summary>
+<summary> <strong>bag.html</strong></summary>
+
+![bag.html](/documentation/code/bag.png)
 
 </details>
 
 <details>
-<summary> <strong>book_detail.html</strong></summary>
+<summary> <strong>blog.html</strong></summary>
 
-
-</details>
-
-<details>
-<summary> <strong>books.html</strong></summary>
-
+![blog.html](/documentation/code/blog.png)
 
 </details>
 
 <details>
-<summary> <strong>edit_books.html</strong></summary>
+<summary> <strong>checkout_success.html</strong></summary>
 
+![checkout_success.html](/documentation/code/checkout-success.png)
 
 </details>
 
 <details>
-<summary> <strong>index.html</strong></summary>
+<summary> <strong>checkout.html</strong></summary>
 
+![checkout.html](/documentation/code/checkout.png)
+
+</details>
+
+<details>
+<summary> <strong>edit_product.html</strong></summary>
+
+![edit_product.html](/documentation/code/edit_product.png)
 
 </details>
 
 <details>
 <summary> <strong>post_detail.html</strong></summary>
 
+![post-detail.html](/documentation/code/post_detail.png)
 
 </details>
+
+<details>
+<summary> <strong>products.html</strong></summary>
+
+![products.html](/documentation/code/products.png)
+
+</details>
+
+<details>
+<summary> <strong>product-detail.html</strong></summary>
+
+![product-detail.html](/documentation/code/product-detail.png)
+
+</details>
+
+<details>
+<summary> <strong>profile.html</strong></summary>
+
+![profile.html](/documentation/code/profile.png)
+
+</details>
+
 
 ### CSS Code Validation
 🛑🛑 TO-DO
@@ -680,16 +658,7 @@ Back to [top](#table-of-contents)
 
 ## Deployment
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT:**
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-The live deployed application can be found deployed on 🛑 LINK 🛑.
+The live deployed application can be found deployed on https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/ 
 
 ### ElephantSQL Database
 
@@ -844,7 +813,7 @@ As a backup, in case users prematurely close the purchase-order page during paym
 
 - From your Stripe dashboard, click **Developers**, and select **Webhooks**.
 - From there, click **Add Endpoint**.
-	- `🛑 LINK 🛑`
+	- Add your deployed site link.
 - Click **receive all events**.
 - Click **Add Endpoint** to complete the process.
 - You'll have a new key here:
@@ -994,70 +963,55 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
-### Local VS Deployment
+Back to [top](#table-of-contents)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+## Tools & Technologies Used
+### Programming Languages
 
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
+- [Python](https://www.python.org) used as the back-end programming language.
+- [JavaScript](https://www.javascript.com) used for user interaction on the site.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+### Hosting and Database
+- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.- 
+- [GitHub](https://github.com) used for secure online code storage.
+
+### Frameworks and Libraries
+- [Django](https://www.djangoproject.com) used as the Python framework for the site.
+- [Bootstrap 4](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
+- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
+- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
+
+### Tools and Web Applications
+- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [Figma](https://figma.com): used for creating wireframes.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [Lucidchart](https://www.lucidchart.com/) used to design the database diagram.
+
+### Code Validation
+- [JSHint](https://jshint.com/): used for Javascript code validation.
+- [PEP8](https://peps.python.org/pep-0008/): used for Python code validation.
+- [Lighthouse](https://developer.chrome.com/docs/devtools/) Testing site performance on desktop and mobile devices.
+- [W3C HTML](https://validator.w3.org/): used for HTML code validation.
+- [W3C CSS](https://jigsaw.w3.org/css-validator/): used for CSS code validation.
 
 Back to [top](#table-of-contents)
 
 ## Credits
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Content
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| Source | Location | Notes |
-| --- | --- | --- |
-
-### Media
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| Source | Location | Type | Notes |
-| --- | --- | --- | --- |
+- All the guitar images were taken from [Thomann](https://www.thomann.de/ie/index.html).
+- All the blog content was taken from the [Guitar Player](https://www.guitarplayer.com/)
+- README Documenting was inspired by [Retro Reboot](https://github.com/adamgilroy22/retro-reboot/) and [FreshCats](https://github.com/RickofManc/fresh-casts)
 
 ### Acknowledgements
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
 - I would like to thank my wife (Larissa Paz), for believing in me, and allowing me to make this transition into software development.
+- I would like to thank my Code Institute's menthor, Brian Macharia, and the tutor team for their assistance with troubleshooting and debugging some project issues.
+- I would like to thank the Code Institute Slack community for the moral support; it kept me going during periods of self doubt and imposter syndrome.
 
 Back to [top](#table-of-contents)
