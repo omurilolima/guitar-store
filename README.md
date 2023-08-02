@@ -143,9 +143,17 @@ Back to [top](#table-of-contents)
 | --- | --- | --- |
 | Hero image | Presents a big image with a call to action for all products page. | ![screenshot](documentation/hero.png) |
 | Footer | Divided in three section, presents a description of the Guitar Store wich could be used to displays the physical address. A newsletter subscrition form and the social links | ![screenshot](documentation/footer.png) |
-| All Products | This page displays all the available products | ![screenshot](documentation/all-products.png) |
+| Search Bar | To find specific products, users can utilize the search bar in the navigation menu. The search term is compared to product names and descriptions to provide a list of products that match the user's search criteria. | ![screenshot](documentation/search.png)
 | Filter by Price or Category | Through the topbar is possible to display the products ordered by price or category | ![screenshot](documentation/by-price-categofy.png) |
-| All Products | Through the topbar is possible to display the products ordered by price or category | ![screenshot](documentation/by-price-categofy.png) |
+| All Products | This page displays all the available products | ![screenshot](documentation/all-products.png) |
+| Product card | With a good image of the product, this card displays the name, category and price for a regular user. For the admin, there are two special links for editing or deleting the product. | ![screenshot](documentation/product-card.png) |
+| Product | This page displays all the detailed informations about the products, besides the 'Add to Bag' buttom and a Reviews section where any logged user can leave a review. | ![screenshot](documentation/product-page.png) |
+| Bag pop up | When the user add a product to the bag, this pop-up informs that the product was added with success to the bag, besides a summary of the bag and a yellow message about the free delivery offer | ![screenshot](documentation/bag-pop-up.png) |
+| Shopping Bag Page | This page informs the items in the bag page for the user to double chech before the checkout. | ![screenshot](documentation/shopping-bag.png) |
+| Checkout Page | This page has the user fill in the delivery details and credit card info. For logged users, the name, email and delivery information can be saved to be pre-fill in the purchase. | ![screenshot](documentation/checkout-page.png)
+| Order Confirmation Page | Once the order is done, the user will be directed to a confirmation page that informs them that an email containing the order confirmation has been sent to their provided email address. | ![screenshot](documentation/order-confirmation-page.png)
+| Profile page | This page stores the user's default delivery information and the order history. Each order number has a link to its order confirmation page | ![screenshot](documentation/profile-page.png)
+
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 

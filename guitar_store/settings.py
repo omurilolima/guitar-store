@@ -26,12 +26,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # TODO: Change the secret key to an empty string
-SECRET_KEY = os.environ.get('SECRET_KEY', 'sia@o6$oxk466^e8#su23sonr!)e9ijknx%!%u#s0&v!+@mbli')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-# 'DEVELOPMENT' in os.environ
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
     'murilo-guitar-shop-dee69b8139e5.herokuapp.com',
