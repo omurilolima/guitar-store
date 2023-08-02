@@ -125,44 +125,13 @@ Back to [top](#table-of-contents)
 
 ## Wireframes
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Figma](https://www.figma.com/) to design my site wireframes.
 
-### Home Page Wireframes
-
-| Size | Screenshot |
+| Page | Wireframe |
 | --- | --- |
-
-
-### About Page Wireframes
-
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-about.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-about.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
-
-### Contact Page Wireframes
-
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat for any addition wireframe pages you have.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Home | ![screenshot](documentation/home-wireframe.png) |
+| All products | ![screenshot](documentation/all-products-wireframe.png) |
+| Product detail | ![screenshot](documentation/product-detail-wireframe.png) |
 
 Back to [top](#table-of-contents)
 
