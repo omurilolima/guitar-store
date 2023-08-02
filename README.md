@@ -53,6 +53,11 @@ I used Google Fonts to select and import the font Poppins, including for main he
 Example:
 ![font](documentation/lato-google-font.png)
 
+### Images and Post Content
+
+All the guitar images on the site were gathered on [Thomann](https://thomann.de/ie/) website.
+The blog posts were oginaly published by [Guitar Player](https://www.guitarplayer.com/) magazine.
+
 Back to [top](#table-of-contents)
 
 ## User Stories
