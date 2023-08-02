@@ -607,19 +607,15 @@ I used Chrome developer tool to check the responsiveness on different screen siz
 
 ### Automatic Testing
 
-Django testing tools have been used to perform basic automatic testing on Guitar Store Python code for validating the main logical thing. Tests were run using the local SQLite3 database as opposed to the production PostgreSQL database.
+Django testing tools have been used to perform basic automatic testing on Guitar Store Python code for validating the main logical thing. Tests were run using the local SQLite3 database as opposed to the production PostgreSQL database. Those tests achieve 70% coverage.
 
-Test scripts were written for the following blog app files;
+Test scripts were written for all models.py, forms.py and views.py of the project apps (bag, blog, checkout, guitar store, home, products and profiles);
 
 models.py
 views.py
 forms.py
 
-Those tests achieve 90% coverage. The results so far are highlighted in the summary report below:
-
-![Coverage report](/media/Coverage%20report.png)
-
-### Forms
+### Automatic test: Forms
 | Test Label | Test Action | Expected Outcome | Test Outcome |
 | --- | --- | --- | --- |
 | ProductForm - Name | Input empty value and click submit | Error message: “This field is required” | PASS |
@@ -641,14 +637,14 @@ Those tests achieve 90% coverage. The results so far are highlighted in the summ
 | ReviewForm fields | body field is explicit in form metaclass  | Field displayed | PASS |
 | Add review | Add a product review  | Review added | PASS |
 
-### Models
+### Automatic test:  Models
 | Test Label | Test Action | Expected Outcome | Test Outcome |
 | --- | --- | --- | --- |
 | Create Product | Testing create a product | Product created | PASS |
 | Comment | Creating a comment | str( ) method called by str() return the default f-string. | PASS |
 
 
-### Views
+### Automatic test: Views
 
 | Test Label | Test Action | Expected Outcome | Test Outcome |
 | --- | --- | --- | --- |
