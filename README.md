@@ -39,16 +39,26 @@ This is my final project for the Full-Stack Software Development Course at Code 
     - [Social Media Marketing](#social-media-marketing)
     - [Newsletter Marketing](#newsletter-marketing)
 - [Testing](#testing)
-    - Code Validation
-    - Manual testing of user stories
-    - Performing tests on various devices
-    - Browser compatibility
+    - [HTML Code Validation](#html-code-validation)
+    - [CSS Code Calidation](#css-code-validation)
+    - [Manual Testing](#manual-testing)
+    - [Browser Testing](#browser-testing)
+    - [Responsiveness](#responsiveness)
+    - [Automatic Testing](#automatic-testing)
+- [Configuration and Deployment](#configuration)
+    - [ElephantSQL Database](#elephantsql-database)
+    - [Amazon AWS](#amazon-aws)
+    - [Stripe API](#stripe-api)
+    - [Gmail API](#gmail-api)
+    - [Heroku Deployment](#heroku-deployment)
+    - [Local Deployment](#local-deployment)
 - [Technologies Used](#technologies-used)
-- [Configuration](#configuration)
-    - Forking the GitHub Repository
-    - PostgreSQL Database
-    - Deploy with Heroku
-    - Pre Production Deployment
+    - [Programming Languages](#programming-languages)
+    - [Hosting and Database](#hosting-and-database)
+    - [Frameworks and Libraries](#frameworks-and-libraries)
+    - [Tools and Web Applications](#tools-and-web-applications)
+    - [Code Validation](#code-validation)
+
 - [Credits](#credits)
     - [Content](#content)
     - [Acknowledgements](#acknowledgements)
@@ -632,6 +642,7 @@ CSS file validation results generated with W3C Validation Service
 | --- | --- | --- | --- |
 | Site loading | Navigate to the “Homepage”, “Login”, “Register”, “Add a product”, “Logout” and “All Products”, "Blog", "Blog Post" page. | All the pages and elements are loaded according. | PASS  |
 | Add a product in the bag | On the product detail page, click the "Add to bag" button”. | The product is added to the bag and can be found in the bag page. | PASS |
+| Checkout | On the checkout page, fill the form with user details, delivery details and the Stripe Test Credit info. | The checkout in done, a order confirmation page is displayed and a email confirmation is sent. | PASS |
 | Read a blog post | On the blog homepage, click on one of the cards presented in the “blog posts” section. | All the elements of post_detail are loaded according. | PASS |
 | Leave a comment without logging | On the “post page”, without having logged in, go to the comment section. | A message informing that “To see the comments and leave a comment, please log in or create an account.” must be presented followed by the buttons “login” and “register”. | PASS |
 | Leave a comment being logged in. | On the “post page”, having logged in, go to the comment section. Write some text and hit the “submit” button. | A message informing that “Your comment is awaiting approval” must be displayed. | PASS  |
@@ -713,7 +724,7 @@ forms.py
 
 Back to [top](#table-of-contents)
 
-## Deployment
+## Configuration and Deployment
 
 The live deployed application can be found deployed on https://murilo-guitar-shop-dee69b8139e5.herokuapp.com/ 
 
@@ -1022,7 +1033,7 @@ You can fork this repository by using the following steps:
 
 Back to [top](#table-of-contents)
 
-## Tools & Technologies Used
+## Technologies Used
 ### Programming Languages
 
 - [Python](https://www.python.org) used as the back-end programming language.
