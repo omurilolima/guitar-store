@@ -8,6 +8,50 @@ This is my final project for the Full-Stack Software Development Course at Code 
 
 ![screenshot](documentation/the-guitar-store.png)
 
+- [Introdution](#introdution)
+    - [Business goals addressed with this site](#business-goals-addressed-with-this-site)
+    - [Customer needs](#customer-needs)
+- [UX](#ux)
+    - [Business Goals](#business-goals-addressed-with-this-site)
+    - [Ideal client](#ideal-client)
+    - [Strategy](#strategy)
+    - [Colour scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Images and Post Content](#images-and-post-content)
+    - [Wireframes](#wireframes)
+- [Agile Development Process](#agile-development-process)
+    - [Strategy](#strategy)
+    - [GitHub Projects](#github-projects)
+    - [GitHub Issues](#github-issues)
+    - [MosCow Prioritization](#moscow-prioritization)
+- [User Stories](#user-stories)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features to Implement in Future](#features-to-implement-in-future)
+- [Database Design](#database-design)
+- [Ecommerce Business Model](#ecommerce-business-model)
+- [Search Engine Optimization (SEO) & Social Media Marketing](#search-engine-optimization-seo--social-media-marketing)
+    - [Description and Keywords](#description-and-keywords)
+    - [Sitemap](#sitemap)
+    - [Robots](#robots)
+    - [Social Media Marketing](#social-media-marketing)
+    - [Newsletter Marketing](#newsletter-marketing)
+- [Testing](#testing)
+    - Code Validation
+    - Manual testing of user stories
+    - Performing tests on various devices
+    - Browser compatibility
+- [Technologies Used](#technologies-used)
+- [Configuration](#configuration)
+    - Forking the GitHub Repository
+    - PostgreSQL Database
+    - Deploy with Heroku
+    - Pre Production Deployment
+- [Credits](#credits)
+    - [Content](#content)
+    - [Acknowledgements](#acknowledgements)
+
+
 ## Introdution
 
 The Guitar Store is a comprehensive Django website specialized created for an Irish local store sell guitars online. There, users can search for products, buy them securely using Stripe Payments,  create a profile to leave product reviews, besides to keep an Order History. Also, the site a newsletter sign up and a blog section where users  can find content about Music and Instruments and interact adding a comment or liking a post.
@@ -58,9 +102,28 @@ Example:
 All the guitar images on the site were gathered on [Thomann](https://thomann.de/ie/) website.
 The blog posts were oginaly published by [Guitar Player](https://www.guitarplayer.com/) magazine.
 
+### Wireframes
+
+I've used [Figma](https://www.figma.com/) to design my site wireframes.
+
+| Page | Wireframe |
+| --- | --- |
+| Home | ![screenshot](documentation/home-wireframe.png) |
+| All products | ![screenshot](documentation/all-products-wireframe.png) |
+| Product detail | ![screenshot](documentation/product-detail-wireframe.png) |
+
 Back to [top](#table-of-contents)
 
 ## Agile Development Process
+
+### Strategy
+
+ This project uses Agile Methodology. A planning session generated 34 Tasks through 29 User Stories and 8 Epics, each one with their acceptance criterias. 2 of then was not implemented and they are listed in the "Features to Implement in the Future" session. The development process was based on iterative incremental philosophy, adopting 1 week sprints with the following goals:
+
+- <strong>Week 1</strong>: Basic structure and features running with boilerplate design and content.
+- <strong>Week 2</strong>: CRUD functionalities of product section running with boilerplate design and content.
+- <strong>Week 3</strong>: CRUD functionalities of blog section + Final version of the design and content + Messages.
+- <strong>Week 4</strong>: Testing, final deploy and documentation.
 
 ### GitHub Projects
 
@@ -146,20 +209,9 @@ View a full list of user stories [here](https://github.com/users/omurilolima/pro
 
 Back to [top](#table-of-contents)
 
-## Wireframes
-
-I've used [Figma](https://www.figma.com/) to design my site wireframes.
-
-| Page | Wireframe |
-| --- | --- |
-| Home | ![screenshot](documentation/home-wireframe.png) |
-| All products | ![screenshot](documentation/all-products-wireframe.png) |
-| Product detail | ![screenshot](documentation/product-detail-wireframe.png) |
-
-Back to [top](#table-of-contents)
-
 ## Features
 
+### Existing Features
 | Feature | Description | Image |
 | --- | --- | --- |
 | Hero image | Presents a big image with a call to action for all products page. | ![screenshot](documentation/hero.png) |
