@@ -8,6 +8,8 @@ This is my final project for the Full-Stack Software Development Course at Code 
 
 ![screenshot](documentation/the-guitar-store.png)
 
+## Table of Contents
+
 - [Introdution](#introdution)
     - [Business goals addressed with this site](#business-goals-addressed-with-this-site)
     - [Customer needs](#customer-needs)
