@@ -42,6 +42,7 @@ This is my final project for the Full-Stack Software Development Course at Code 
     - [HTML Code Validation](#html-code-validation)
     - [CSS Code Calidation](#css-code-validation)
     - [Manual Testing](#manual-testing)
+        - [How to use Stripe test card](#how-to-use-stripe-test-card)
     - [Browser Testing](#browser-testing)
     - [Responsiveness](#responsiveness)
     - [Automatic Testing](#automatic-testing)
@@ -62,7 +63,6 @@ This is my final project for the Full-Stack Software Development Course at Code 
 - [Credits](#credits)
     - [Content](#content)
     - [Acknowledgements](#acknowledgements)
-
 
 ## Introdution
 
@@ -650,6 +650,15 @@ CSS file validation results generated with W3C Validation Service
 | Add a product | On the navbar, click the “Product Management” option, fill out the form and hit the “Submit” button. | A success message must be displayed and the product must be listed on the “All Products” page. | PASS |
 | Edit a product | On the products page, click the “Edit” button, change some info on the form and hit the “Submit” button. | A success message must be displayed and the product info must be updated. | PASS |
 | Delete a Product | On the products page, click the “Delete”. | The product must be deleted. | PASS |
+
+#### How to use Stripe test card
+When testing interactively, use a card number, such as 4242 4242 4242 4242. Enter the card number in the Dashboard or in any payment form.
+
+- Use a valid future date, such as 12/34.
+- Use any three-digit CVC (four digits for American Express cards).
+- Use any value you like for other form fields.
+See more on [Stripe site](https://stripe.com/docs/testing#testing-interactively)
+![Stripe Test Card](/documentation/stripe-test-cardjpg.jpg)
 
 ### Browser Testing
 I have tested this application works on the following installed browsers, using a Dell laptop on Windows OS:
