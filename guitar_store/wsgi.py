@@ -1,16 +1,29 @@
-"""
-WSGI config for guitar_store project.
+# """
+# WSGI config for guitar_store project.
 
-It exposes the WSGI callable as a module-level variable named ``application``.
+# It exposes the WSGI callable as a module-level variable named ``application``.
 
-For more information on this file, see
-https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
-"""
+# For more information on this file, see
+# https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
+# """
+
+# import os
+
+# from django.core.wsgi import get_wsgi_application
+
+# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "guitar_store.settings")
+
+# application = get_wsgi_application()
 
 import os
-
+import sys
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "guitar_store.settings")
 
-application = get_wsgi_application()
+try:
+    application = get_wsgi_application()
+except Exception as e:
+    print("WSGI application failed to start:", str(e), file=sys.stderr)
+    raise
+
