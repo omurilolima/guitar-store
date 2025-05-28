@@ -18,6 +18,11 @@
 import os
 import sys
 from django.core.wsgi import get_wsgi_application
+import dotenv
+dotenv.load_dotenv()
+
+if os.path.exists("env.py"):
+    import env
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "guitar_store.settings")
 
