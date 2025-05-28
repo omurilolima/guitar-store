@@ -88,6 +88,7 @@ plotly==5.21.0
 prometheus-client==0.18.0
 prompt-toolkit==3.0.39
 psutil==5.9.6
+psycopg2-binary==2.9.10
 pure-eval==0.2.2
 py-moneyed==3.0
 pycparser==2.21
